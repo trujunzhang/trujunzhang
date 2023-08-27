@@ -36,7 +36,7 @@ const Home = async (props: Props) => {
       </section>
 
       <section id='skills' className='snap-start'>
-        <Skills skills={skills} />
+        {/* <Skills skills={skills} /> */}
       </section>
 
       <section id='experience' className='snap-center'>

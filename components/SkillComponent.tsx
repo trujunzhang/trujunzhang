@@ -1,3 +1,4 @@
+import BaseBlockContent from '@sanity/block-content-to-react'
 import urlFor from '@/lib/urlFor';
 import { motion } from 'framer-motion';
 import React from 'react';
@@ -11,7 +12,7 @@ const SkillComponent = ({ skill, directionLeft }: Props) => {
     // Need to fix framer motion animation on mobile devices
   return (
     <div className='group relative flex cursor-pointer'>
-        <motion.img 
+        <motion.img
             initial={{
                 x: directionLeft ? -50 : 50,
                 opacity: 0
