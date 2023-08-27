@@ -17,5 +17,6 @@ COPY --from=builder /my-space/next.config.js ./
 COPY --from=builder /my-space/public ./public
 COPY --from=builder /my-space/.next/standalone ./
 COPY --from=builder /my-space/.next/static ./.next/static
+COPY --from=builder /my-space/node_modules ./node_modules
 EXPOSE 3000
 ENTRYPOINT ["npm", "start"]
