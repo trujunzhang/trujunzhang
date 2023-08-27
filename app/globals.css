@@ -4,7 +4,7 @@
 
 @layer components{
   .heroButton{
-    @apply px-6 py-2 border border-[#242424] rounded-full uppercase text-xs md:text-sm 
+    @apply px-6 py-2 border border-[#242424] rounded-full uppercase text-xs md:text-sm
     tracking-widest text-gray-500 transition-all hover:border-[#19A7CE] hover:text-[#19A7CE]
   }
 
@@ -15,5 +15,9 @@
 
   .scrollbarStyle{
     @apply scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#19A7CE]/80 scrollbar-thumb-rounded-lg scrollbar-thin
+  }
+
+  .section-body{
+    @apply max-w-7xl mx-auto
   }
 }

@@ -24,7 +24,7 @@ const Home = async (props: Props) => {
   const skills: Skill[] = await getSkills();
 
   return (
-    <div className='bg-[#242424] text-white h-screen snap-mandatory snap-y overflow-y-scroll overflow-x-hidden z-0 scrollbarStyle'>
+    <div className='bg-white text-white h-screen snap-mandatory snap-y overflow-y-scroll overflow-x-hidden z-0 scrollbarStyle'>
       <Header socials={socials} />
 
       <section id='hero' className='snap-start'>
@@ -35,12 +35,12 @@ const Home = async (props: Props) => {
         <About pageInfo={pageInfo} />
       </section>
 
-      <section id='experience' className='snap-center'>
-        <WorkExperience experiences={experiences} />
-      </section>
-
       <section id='skills' className='snap-start'>
         <Skills skills={skills} />
+      </section>
+
+      <section id='experience' className='snap-center'>
+        <WorkExperience experiences={experiences} />
       </section>
 
       <section id='projects' className='snap-start'>
@@ -48,7 +48,7 @@ const Home = async (props: Props) => {
       </section>
 
       <section id='contact' className='snap-start'>
-        <ContactMe pageInfo={pageInfo} />
+        {/* <ContactMe pageInfo={pageInfo} /> */}
       </section>
 
       <Link href="#hero">

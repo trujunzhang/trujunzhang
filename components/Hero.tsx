@@ -1,56 +1,50 @@
-"use client"
+"use client";
 
-import React from 'react';
-import { Cursor, useTypewriter } from 'react-simple-typewriter';
-import BackgroundCircles from './BackgroundCircles';
-import Link from 'next/link';
-import urlFor from '@/lib/urlFor';
+import React from "react";
+import { Cursor, useTypewriter } from "react-simple-typewriter";
+import BackgroundCircles from "./BackgroundCircles";
+import Link from "next/link";
+import Image from "next/image";
+import urlFor from "@/lib/urlFor";
 
 type Props = {
-    pageInfo: PageInfo;
-}
+  pageInfo: PageInfo;
+};
 
 const Hero = ({ pageInfo }: Props) => {
-    const [text, count] = useTypewriter({
-        words: [`Hi! The Name is ${pageInfo?.name}`],
-        loop: true,
-        delaySpeed: 5000
-    })
-
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
-        <BackgroundCircles />
-        <img
-            className='rounded-full mx-auto h-32 w-32 object-cover'
-            src={urlFor(pageInfo.heroImage).url()}
-            alt="heroImage"
-        />
-        <div className='z-20'>
-            <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[12px]'>
-                {pageInfo?.role}
-            </h2>
-            <h1 className='text-5xl lg:text-6xl font-semibold px-10'>
-                <span className='mr-3'>{text}</span>
-                <Cursor cursorColor="#19A7CE" />
-            </h1>
+    <div className="section-body flex flex-col space-y-32 py-12 items-center justify-center text-center overflow-hidden">
+      <div className="flex flex-col gap-4">
+        <h1 className="text-gray-800 text-5xl font-bold">{pageInfo?.title}</h1>
+        <p className="text-xl text-gray-700 text-medium">
+          {pageInfo?.subTitle}
+        </p>
+      </div>
 
-            <div className='pt-5'>
-                <Link href="#about">
-                    <button className='heroButton'>About</button>
-                </Link>
-                <Link href="#experience">
-                    <button className='heroButton'>Experience</button>
-                </Link>
-                <Link href="#skills">
-                    <button className='heroButton'>Skills</button>
-                </Link>
-                <Link href="#projects">
-                    <button className='heroButton'>Projects</button>
-                </Link>
-            </div>
-        </div>
+      <div className="relative rounded-full border-4 border-secondary w-[200px] h-[200px]">
+        <Image
+          className=" rounded-full object-cover  p-[4px]"
+          src={urlFor(pageInfo.profilePicture).url()}
+          fill
+          alt="profileImage"
+        />
+      </div>
+
+      <div className="relative w-full h-[400px]">
+        <Image
+          className="object-fill"
+          src={urlFor(pageInfo.heroImage).url()}
+          fill
+        />
+      </div>
+
+      <div className="z-20">
+        <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[12px]">
+          {pageInfo?.role}
+        </h2>
+      </div>
     </div>
   );
-}
+};
 
 export default Hero;

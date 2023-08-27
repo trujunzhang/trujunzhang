@@ -14,7 +14,7 @@ const WorkExperience = ({ experiences }: Props) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className='h-screen flex flex-col relative text-left max-w-full px-10 justify-center items-center mx-auto md:gap-5'
+      className='flex flex-col relative text-left max-w-full px-10 justify-center items-center mx-auto md:gap-5'
     >
       <h3 className='mt-14 sm:mt-10 uppercase tracking-[15px] text-gray-500 text-2xl -mr-[15px]'>
         Experience
@@ -22,7 +22,7 @@ const WorkExperience = ({ experiences }: Props) => {
 
       <div className='max-w-6xl w-full flex space-x-5 overflow-x-scroll p-5 snap-x snap-mandatory scrollbarStyle'>
         {experiences.map((experience: Experience) => (
-          <ExperienceCard 
+          <ExperienceCard
             key={experience._id}
             experience={experience}
           />
