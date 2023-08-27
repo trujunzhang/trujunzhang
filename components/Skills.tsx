@@ -11,10 +11,10 @@ type Props = {
 const Skills = ({ skills }: Props) => {
   return (
     <div
-      className='flex relative flex-col text-center md:text-left items-center max-w-[2000px] xl:px-10 justify-center mx-auto gap-5'
+      className='flex relative flex-col text-center md:text-left items-center max-w-[2000px] xl:px-10 justify-center mx-auto gap-5 bg-primary'
     >
 
-      <div className='grid grid-cols-4 md:grid-cols-6 gap-5'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-5'>
         {skills.map((skill: Skill, index: number) => (
           <SkillComponent
             key={skill._id}

@@ -2,7 +2,6 @@
 
 import React from "react";
 import { SocialIcon } from "react-social-icons";
-import { motion } from "framer-motion";
 import Link from "next/link";
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
 

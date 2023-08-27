@@ -40,8 +40,13 @@ interface Technology extends SanityBody {
 }
 interface Skill extends SanityBody {
   _type: "skill";
-  image: Image;
+  icon: Image;
+  name: string;
+  description: string;
   title: string;
+  subTitle: string;
+  skillTitle: string;
+  skill: string;
 }
 
 interface Project extends SanityBody {

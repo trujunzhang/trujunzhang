@@ -36,15 +36,15 @@ const Home = async (props: Props) => {
       </section>
 
       <section id='skills' className='snap-start'>
-        {/* <Skills skills={skills} /> */}
+        <Skills skills={skills} />
       </section>
 
       <section id='experience' className='snap-center'>
-        <WorkExperience experiences={experiences} />
+        {/* <WorkExperience experiences={experiences} /> */}
       </section>
 
       <section id='projects' className='snap-start'>
-        <Projects projects={projects} />
+        {/* <Projects projects={projects} /> */}
       </section>
 
       <section id='contact' className='snap-start'>
@@ -54,7 +54,7 @@ const Home = async (props: Props) => {
       <Link href="#hero">
         <footer className='sticky bottom-5 w-full cursor-pointer'>
           <div className='flex items-center justify-center'>
-            <ArrowUpCircleIcon className='h-8 w-8 rounded-full opacity-20 hover:opacity-50 transition ease-in-out select-none' />
+            {/* <ArrowUpCircleIcon className='h-8 w-8 rounded-full opacity-20 hover:opacity-50 transition ease-in-out select-none' /> */}
           </div>
         </footer>
       </Link>
