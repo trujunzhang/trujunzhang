@@ -15,7 +15,7 @@ const Header = ({ socials }: Props) => {
       {/*Left Container*/}
       <div>
         <svg
-          className="svg-inline--fa fa-mf-logo has-text-primary fa-4x w-[84px] h-[84px] fill-primary"
+          className="svg-inline--fa fa-mf-logo has-text-primary fa-4x w-[84px] h-[84px] fill-primary-700"
           aria-hidden="true"
           focusable="false"
           data-prefix="fak"
@@ -32,7 +32,7 @@ const Header = ({ socials }: Props) => {
       {/*Right Container*/}
       <div className="flex gap-6">
         <button className="text-black text-semibold">Say Hello</button>
-        <button className="border border-[2px] border-primary text-primary text-semibold rounded-full px-6 py-2">
+        <button className="border-[2px] border-primary-700 text-primary-700 text-semibold rounded-full px-6 py-2">
           Hire me
         </button>
       </div>

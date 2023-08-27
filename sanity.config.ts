@@ -9,7 +9,7 @@ const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET!;
 
 export default defineConfig({
   name: "Portfolio-Content-Studio",
-  title: "Aviral's Portfolio",
+  title: "Zhang's Portfolio",
 
   projectId,
   dataset,
@@ -23,7 +23,7 @@ export default defineConfig({
   },
   studio: {
     components: {
-      navbar: StudioNavbar
-    }
-  }
+      navbar: StudioNavbar,
+    },
+  },
 });

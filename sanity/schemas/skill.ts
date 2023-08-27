@@ -32,9 +32,9 @@ export default defineType({
       type: "string"
     }),
     defineField({
-      name: "subtitle",
-      title: "Subtitle",
-      description: "Subtitle of Skill",
+      name: "subTitle",
+      title: "SubTitle",
+      description: "SubTitle of Skill",
       type: "string"
     }),
     defineField({

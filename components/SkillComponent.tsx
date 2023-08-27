@@ -1,27 +1,64 @@
-import BaseBlockContent from '@sanity/block-content-to-react'
-import urlFor from '@/lib/urlFor';
-import React from 'react';
-import Image from 'next/image';
+import { PortableText } from "@portabletext/react";
+import urlFor from "@/lib/urlFor";
+import React from "react";
+import Image from "next/image";
 
 type Props = {
-    skill: Skill;
-}
+  skill: Skill;
+};
 
-const SkillComponent = ({ skill}: Props) => {
-    // Need to fix framer motion animation on mobile devices
+type PortableTextProps = {
+  children: React.ReactNode;
+};
+
+const SkillComponent = ({ skill }: Props) => {
+  const components = {
+    block: {
+      // Ex. 1: customizing common block types
+      h1: ({ children }: PortableTextProps) => (
+        <h1 className="text-2xl">{children}</h1>
+      ),
+      // Ex. 2: rendering custom styles
+      customHeading: ({ children }: PortableTextProps) => (
+        <h2 className="text-lg text-primary-700">{children}</h2>
+      ),
+    },
+  };
+
   return (
-    <div className='group relative flex cursor-pointer'>
-        <Image
+    <div className="flex flex-col items-center text-center gap-8 text-gray-800">
+      {/* skill header */}
+      <div className="flex flex-col items-center gap-4">
+        <div className="relative w-24 h-24 rounded-full bg-green-500 my-4">
+          <Image
             src={urlFor(skill?.icon).url()}
             alt={skill?.title}
-            className='rounded-full object-cover object-center w-14 h-14 md:w-16 md:h-16 filter group-hover:grayscale transition duration-300 ease-in-out'
-        fill
+            className="object-center p-5"
+            fill
+          />
+        </div>
+        <h1 className="text-2xl font-bold">{skill?.name}</h1>
+        <p className="max-w-[320px] text-sm font-base">{skill?.description}</p>
+      </div>
+
+      {/* skill title*/}
+      <div className="flex flex-col items-center gap-3">
+        <h3 className="font-normal text-primary-600">{skill.title}</h3>
+        <p>{skill.subTitle}</p>
+      </div>
+
+      <div className="flex flex-col items-center gap-2">
+        <h3 className="font-normal text-primary-600 pb-1">
+          {skill.skillTitle}
+        </h3>
+        <PortableText
+          value={skill.skill}
+          onMissingComponent={false}
+          components={components as any}
         />
-            <div className='flex justify-center items-center h-full'>
-                <p className='text-[9px] md:text-xs font-bold text-black opacity-100 text-center'>{skill.title}</p>
-            </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default SkillComponent;

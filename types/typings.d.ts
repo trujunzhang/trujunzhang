@@ -46,7 +46,8 @@ interface Skill extends SanityBody {
   title: string;
   subTitle: string;
   skillTitle: string;
-  skill: string;
+  // skill: TypedObject | TypedObject[];
+  skill: PortableTextProps[];
 }
 
 interface Project extends SanityBody {
