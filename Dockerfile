@@ -2,9 +2,12 @@ FROM node:18-alpine as builder
 WORKDIR /my-space
 
 COPY package.json yarn.lock ./
-RUN npm ci
+# RUN npm install -g yarn
+# RUN npm ci
+RUN ["yarn", "install"]
 COPY . .
-RUN npm run build
+# RUN npm run build
+RUN ["yarn", "build"]
 
 FROM node:18-alpine as runner
 WORKDIR /my-space
