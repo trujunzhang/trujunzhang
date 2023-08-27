@@ -35,6 +35,7 @@ const Hero = ({ pageInfo }: Props) => {
           className="object-fill"
           src={urlFor(pageInfo.heroImage).url()}
           fill
+          alt="heroImage"
         />
       </div>
 
