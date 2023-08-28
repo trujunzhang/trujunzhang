@@ -13,7 +13,7 @@ const Projects = ({ projects }: Props) => {
 
   return (
     <div
-      className=""
+      className="section-body flex flex-col mx-auto items-center justify-center text-center"
     >
       <h3 className="mt-8 uppercase tracking-[15px] text-gray-500 text-2xl -mr-[15px]">
         Featured Work
