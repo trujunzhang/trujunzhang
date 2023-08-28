@@ -7,12 +7,12 @@ services:
       - 80:80
     networks:
       - web
-    restart: always            
+    restart: always
   nginx:
     image: nginx
     ports:
       - 80:80
-      - 443:443
+      - 444:443
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf
       - /etc/letsencrypt:/etc/letsencrypt
@@ -20,7 +20,7 @@ services:
       - app
     networks:
       - web
-    restart: always            
+    restart: always
 networks:
   web:
     driver: bridge
