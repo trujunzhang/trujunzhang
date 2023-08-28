@@ -5,13 +5,14 @@ import Image from "next/image";
 
 type Props = {
   skill: Skill;
+  index: number;
 };
 
 type PortableTextProps = {
   children: React.ReactNode;
 };
 
-const SkillComponent = ({ skill }: Props) => {
+const SkillComponent = ({ skill,index }: Props) => {
   const components = {
     block: {
       // Ex. 1: customizing common block types
@@ -26,7 +27,8 @@ const SkillComponent = ({ skill }: Props) => {
   };
 
   return (
-    <div className="flex flex-col items-center text-center gap-8 text-gray-800">
+    <div
+      className={`flex flex-col items-center text-center gap-8 text-gray-800 pt-0 md:pt-20 pb-0 md:pb-16 ${index !==2 && 'border-r-0 md:border-r-1'}`}>
       {/* skill header */}
       <div className="flex flex-col items-center gap-4">
         <div className="relative w-24 h-24 rounded-full bg-green-500 my-4">

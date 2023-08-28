@@ -2,7 +2,6 @@
 
 import urlFor from '@/lib/urlFor';
 import { ArrowTopRightOnSquareIcon, CodeBracketIcon } from '@heroicons/react/20/solid';
-import { motion } from 'framer-motion';
 import Link from 'next/link';
 import React from 'react';
 
@@ -13,14 +12,11 @@ type Props = {
 const Projects = ({ projects }: Props) => {
 
   return (
-    <motion.div
-      className="h-screen relative flex overflow-hidden flex-col text-left max-w-full justify-center mx-auto items-center z-0"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1.5 }}
+    <div
+      className=""
     >
       <h3 className="mt-8 uppercase tracking-[15px] text-gray-500 text-2xl -mr-[15px]">
-        Projects
+        Featured Work
       </h3>
 
       <div className="w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbarStyle">
@@ -29,11 +25,7 @@ const Projects = ({ projects }: Props) => {
             className="w-screen h-fit flex-shrink-0 snap-center flex flex-col space-y-5 items-center p-5"
             key={project._id}
           >
-            <motion.img
-              initial={{ opacity: 0, y: -100 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1.2 }}
-              viewport={{ once: true }}
+            <img
               src={urlFor(project.image).url()}
               alt={project.title}
               className="max-w-[400px] max-h-[200px] w-full object-cover object-center rounded-md"
@@ -83,8 +75,7 @@ const Projects = ({ projects }: Props) => {
         ))}
       </div>
 
-      <div className="w-full absolute top-[30%] bg-[#19A7CE]/10 left-0 h-[500px] -skew-y-12" />
-    </motion.div>
+    </div>
   );
 }
 

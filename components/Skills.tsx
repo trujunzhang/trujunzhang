@@ -11,14 +11,15 @@ type Props = {
 const Skills = ({ skills }: Props) => {
   return (
     <div
-      className='section-body bg-white rounded-lg shadow-md pt-20 pb-16'
+      className='section-body bg-white rounded-lg shadow-md py-12 md:py-0'
     >
 
-      <div className='grid grid-cols-1 md:grid-cols-3'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-0'>
         {skills.map((skill: Skill, index: number) => (
           <SkillComponent
             key={skill._id}
             skill={skill}
+            index={index}
           />
         ))}
       </div>
