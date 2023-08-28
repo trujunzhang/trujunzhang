@@ -11,7 +11,7 @@ services:
     container_name: nginx
     ports:
       - "80:80"
-      - "443:443"
+      - "444:443"
     volumes:
       - /etc/ssl/trujunzhang:/etc/nginx/ssl:ro
     restart: always
