@@ -10,6 +10,7 @@ services:
     restart: always
   nginx:
     image: nginx
+    container_name: blog_ngnix
     ports:
       - 444:443
     volumes:
