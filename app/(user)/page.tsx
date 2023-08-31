@@ -37,17 +37,16 @@ const Home = async (props: Props) => {
         <Hero pageInfo={pageInfo} />
       </section>
 
-      <section className="relative">
-        <div className="bg-primary-700">
-          <About pageInfo={pageInfo} />
-        </div>
-        <div className="-mt-[200px]">
-          <Skills skills={skills} />
-        </div>
+      <section id="about" className="snap-center bg-primary-700">
+        <About pageInfo={pageInfo} />
+      </section>
+
+      <section id="skills" className="snap-start -mt-[200px]">
+        <Skills skills={skills} />
       </section>
 
       {/* <section id="experience" className="snap-center"> */}
-        {/* <WorkExperience experiences={experiences} /> */}
+      {/* <WorkExperience experiences={experiences} /> */}
       {/* </section> */}
 
       <section id="projects" className="snap-start">

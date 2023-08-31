@@ -6,18 +6,16 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
+      name: "publish",
+      title: "Publish",
+      description: "Do you want to publish this project?",
+      type: "boolean",
+    }),
+    defineField({
       name: "title",
       title: "Title",
       description: "Title of the project",
       type: "string"
-    }),
-    defineField({
-      name: "image",
-      title: "Image",
-      type: "image",
-      options: {
-          hotspot: true
-      }
     }),
     defineField({
       name: "summary",
@@ -25,17 +23,44 @@ export default defineType({
       type: "text"
     }),
     defineField({
-      name: "technologies",
-      title: "Technologies",
-      type: "array",
-      of: [{
-        type: "reference",
-        to: { type: "skill" }
-      }]
+      name: "desktopImage",
+      title: "Image of Desktop",
+      type: "image",
+      options: {
+          hotspot: true
+      }
     }),
     defineField({
-      name: "linkToBuild",
-      title: "Link To Build",
+      name: "mobileImage",
+      title: "Image of Mobile",
+      type: "image",
+      options: {
+          hotspot: true
+      }
+    }),
+    defineField({
+      name: "linkToGithub",
+      title: "Link To Github",
+      type: "url",
+    }),
+    defineField({
+      name: "linkToFigma",
+      title: "Link To Figma",
+      type: "url",
+    }),
+    defineField({
+      name: "linkToGooglePlay",
+      title: "Link To Google Play",
+      type: "url",
+    }),
+    defineField({
+      name: "linkToAppStore",
+      title: "Link To App Store",
+      type: "url",
+    }),
+    defineField({
+      name: "linkToWebSite",
+      title: "Link To Web Site",
       type: "url",
     }),
     defineField({

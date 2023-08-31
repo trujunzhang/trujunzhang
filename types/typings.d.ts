@@ -53,11 +53,15 @@ interface Skill extends SanityBody {
 interface Project extends SanityBody {
   _type: "project";
   title: string;
-  image: Image;
-  linkToBuild: string;
-  liveLink: string;
   summary: string;
-  technologies: Technology[];
+  desktopImage: Image;
+  mobileImage: Image;
+  linkToGithub: string;
+  linkToFigma: string;
+  linkToGooglePlay: string;
+  linkToAppStore: string;
+  linkToWebsite: string;
+  liveLink: string;
 }
 
 interface Social extends SanityBody {
