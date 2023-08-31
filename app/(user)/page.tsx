@@ -6,6 +6,8 @@ import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Testimonials from "@/components/Testimonials";
 import WorkExperience from "@/components/WorkExperience";
+import StartAProject from "@/components/StartAProject";
+import Footer from "@/components/Footer";
 import {
   getExperience,
   getPageInfo,
@@ -35,7 +37,7 @@ const Home = async (props: Props) => {
   // console.log('testimonials', testimonials[0]);
 
   return (
-    <div className="bg-white text-white snap-mandatory snap-y z-0 pb-[600px]">
+    <div className="bg-green-700 text-white">
       <Header socials={socials} />
 
       <section id="hero" className="snap-start">
@@ -50,7 +52,7 @@ const Home = async (props: Props) => {
         <Skills skills={skills} />
       </section>
 
-      <section id="projects" className="snap-start">
+      <section id="projects" className="section-body section-padding-top">
         <Projects projects={projects} />
       </section>
 
@@ -60,17 +62,19 @@ const Home = async (props: Props) => {
         </section>
       )}
 
+      <section id="startAProject" className="relative offset-background">
+        <div className="mx-20 py-20 px-4 bg-yellow-400 z-10">
+          <StartAProject />
+        </div>
+      </section>
+
+      <section id="footer" className="bg-primary-700">
+        <Footer />
+      </section>
+
       <section id="contact" className="snap-start">
         {/* <ContactMe pageInfo={pageInfo} /> */}
       </section>
-
-      <Link href="#hero">
-        <footer className="sticky bottom-5 w-full cursor-pointer">
-          <div className="flex items-center justify-center">
-            {/* <ArrowUpCircleIcon className='h-8 w-8 rounded-full opacity-20 hover:opacity-50 transition ease-in-out select-none' /> */}
-          </div>
-        </footer>
-      </Link>
     </div>
   );
 };

@@ -22,6 +22,7 @@ const Testimonials = ({ testimonial }: Props) => {
       </div>
       {/* Client's Quotes */}
       <Carousel
+        showThumbs={false}
         showArrows={false}
         showStatus={false}
         autoPlay={true}
@@ -55,7 +56,7 @@ const Testimonials = ({ testimonial }: Props) => {
         {testimonial.clients.map((client, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-center"
+            className="flex flex-col items-center justify-center pb-20"
           >
             <div className="relative rounded-full w-[100px] h-[100px] my-4 md:my-12">
               <Image
