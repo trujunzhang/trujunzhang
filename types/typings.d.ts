@@ -64,6 +64,21 @@ interface Project extends SanityBody {
   liveLink: string;
 }
 
+interface Client extends SanityBody {
+  _type: "client";
+  name: string;
+  avatar: Image;
+  role: string;
+  quote: string;
+}
+
+interface Testimonial extends SanityBody {
+  _type: "testimonial";
+  title: string;
+  description: string;
+  clients: Client[];
+}
+
 interface Social extends SanityBody {
   _type: "social";
   title: string;

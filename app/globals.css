@@ -20,4 +20,8 @@
   .section-body{
     @apply max-w-7xl mx-auto
   }
+
+  .section-padding-top {
+    @apply pt-24
+  }
 }

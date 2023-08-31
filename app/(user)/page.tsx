@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
+import Testimonials from "@/components/Testimonials";
 import WorkExperience from "@/components/WorkExperience";
 import {
   getExperience,
@@ -11,6 +12,7 @@ import {
   getProjects,
   getSkills,
   getSocials,
+  getTestimonials,
 } from "@/lib/utils";
 import { client } from "@/sanity/sanity.client";
 import { ArrowUpCircleIcon } from "@heroicons/react/24/outline";
@@ -28,6 +30,9 @@ const Home = async (props: Props) => {
   const projects: Project[] = await getProjects();
   const socials: Social[] = await getSocials();
   const skills: Skill[] = await getSkills();
+  const testimonials: Testimonial[] = await getTestimonials();
+
+  // console.log('testimonials', testimonials[0]);
 
   return (
     <div className="bg-white text-white snap-mandatory snap-y z-0 pb-[600px]">
@@ -37,7 +42,7 @@ const Home = async (props: Props) => {
         <Hero pageInfo={pageInfo} />
       </section>
 
-      <section id="about" className="snap-center bg-primary-700">
+      <section id="about" className="snap-center bg-primary-700 pb-[300px]">
         <About pageInfo={pageInfo} />
       </section>
 
@@ -45,13 +50,15 @@ const Home = async (props: Props) => {
         <Skills skills={skills} />
       </section>
 
-      {/* <section id="experience" className="snap-center"> */}
-      {/* <WorkExperience experiences={experiences} /> */}
-      {/* </section> */}
-
       <section id="projects" className="snap-start">
         <Projects projects={projects} />
       </section>
+
+      {testimonials.length > 0 && (
+        <section id="testimonials" className="snap-center">
+          <Testimonials testimonial={testimonials[0]} />
+        </section>
+      )}
 
       <section id="contact" className="snap-start">
         {/* <ContactMe pageInfo={pageInfo} /> */}

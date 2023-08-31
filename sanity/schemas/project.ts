@@ -6,8 +6,8 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
-      name: "publish",
-      title: "Publish",
+      name: "published",
+      title: "Published",
       description: "Do you want to publish this project?",
       type: "boolean",
     }),

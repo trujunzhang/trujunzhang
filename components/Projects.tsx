@@ -14,9 +14,9 @@ const Projects = ({ projects }: Props) => {
 
   return (
     <div
-      className="section-body flex flex-col mx-auto items-center justify-center text-center "
+      className="section-body section-padding-top flex flex-col mx-auto items-center justify-center text-center "
     >
-      <h3 className="my-12 pt-24 text-gray-700 text-2xl md:text-4xl font-bold">
+      <h3 className="my-12 text-gray-700 text-2xl md:text-4xl font-bold">
         Featured Work
       </h3>
 

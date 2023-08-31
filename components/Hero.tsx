@@ -11,7 +11,7 @@ type Props = {
 
 const Hero = ({ pageInfo }: Props) => {
   return (
-    <div className="section-body flex flex-col space-y-32 pt-[84px] items-center justify-center text-center overflow-hidden">
+    <div className="section-body section-padding-top flex flex-col space-y-12 md:space-y-32 items-center justify-center text-center overflow-hidden">
       <div className="flex flex-col gap-6">
         <h1 className="text-gray-800 text-xl md:text-5xl font-bold">{pageInfo?.title}</h1>
         <p className="text-base md:text-xl text-gray-700 font-medium">
