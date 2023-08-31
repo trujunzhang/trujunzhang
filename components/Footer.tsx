@@ -31,7 +31,7 @@ const Footer = () => {
         Handcrafted by me
         <span className="">
           <svg
-            class="svg-inline--fa fa-copyright w-4 h-4"
+            className="svg-inline--fa fa-copyright w-4 h-4"
             aria-hidden="true"
             focusable="false"
             data-prefix="far"
