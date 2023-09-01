@@ -14,7 +14,7 @@ const Projects = ({ projects }: Props) => {
 
   return (
     <div
-      className="flex flex-col mx-auto items-center justify-center text-center "
+      className="flex flex-col mx-auto items-center justify-center text-center px-3 lg:px-0"
     >
       <h3 className="my-12 text-gray-700 text-2xl md:text-4xl font-bold">
         Featured Work

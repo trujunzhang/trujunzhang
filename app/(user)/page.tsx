@@ -38,7 +38,7 @@ const Home = async (props: Props) => {
 
   return (
     <div className="bg-white text-white">
-      <Header socials={socials} />
+      <Header />
 
       <section id="hero" className="snap-start">
         <Hero pageInfo={pageInfo} />

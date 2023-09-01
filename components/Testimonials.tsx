@@ -68,7 +68,7 @@ const Testimonials = ({ testimonial }: Props) => {
             </div>
 
             <div className="flex flex-col gap-4 md:gap-6">
-              <p className="max-w-[300px] md:max-w-[800px] md:h-[130px] text-base md:text-xl text-gray-700 font-normal">
+              <p className="max-w-[300px] md:max-w-[800px] md:h-[130px] text-base md:text-xl text-gray-700 font-normal px-12 lg:px-0">
                 {client.quote}
               </p>
               <div className="flex flex-col items-center justify-center gap-1 md:gap-2">

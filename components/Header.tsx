@@ -5,13 +5,10 @@ import { SocialIcon } from "react-social-icons";
 import Link from "next/link";
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
 
-type Props = {
-  socials: Social[];
-};
-
-const Header = ({ socials }: Props) => {
+const Header = () => {
   return (
-    <header className="section-body py-6 flex justify-between items-center">
+    <header
+      className="section-body py-6 flex justify-between items-center px-4 lg:px-0">
       {/*Left Container*/}
       <div>
         <svg

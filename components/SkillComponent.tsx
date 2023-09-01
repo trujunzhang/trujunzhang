@@ -28,7 +28,7 @@ const SkillComponent = ({ skill,index }: Props) => {
 
   return (
     <div
-      className={`flex flex-col items-center text-center gap-8 text-gray-800 pt-0 md:pt-20 pb-0 md:pb-16 ${index !==2 && 'border-r-0 md:border-r-1'}`}>
+      className={`flex flex-col items-center text-center gap-8 text-gray-800 pt-0 md:pt-8 sm:pt-20 pb-0 md:pb-8 sm:pb-16 ${index !==2 && 'border-r-0 lg:border-r-1'}`}>
       {/* skill header */}
       <div className="flex flex-col items-center gap-4">
         <div className="relative w-24 h-24 rounded-full bg-green-500 my-4">
@@ -40,7 +40,7 @@ const SkillComponent = ({ skill,index }: Props) => {
           />
         </div>
         <h1 className="text-2xl font-bold">{skill?.name}</h1>
-        <p className="max-w-[320px] text-sm font-base">{skill?.description}</p>
+        <p className="max-w-[320px] text-sm font-base sm:px-0 md:px-6 lg:px-0">{skill?.description}</p>
       </div>
 
       {/* skill title*/}
