@@ -12,7 +12,7 @@ type Props = {
 
 const Testimonials = ({ testimonial }: Props) => {
   return (
-    <div className="section-body section-padding-top flex flex-col mx-auto items-center justify-center text-center ">
+    <div className="section-body section-padding-top flex flex-col mx-auto items-center justify-center text-center mb-36">
       {/* Title Container */}
       <div className="text-black flex flex-col items-center justify-center gap-3 md:gap-6 pb-6">
         <h1 className="text-3xl md:text-4xl font-bold">{testimonial.title}</h1>

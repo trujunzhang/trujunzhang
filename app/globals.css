@@ -26,31 +26,3 @@
   }
 }
 
-/* A Start Project */
-.section.is-primary {
-  background-color: #6e07f3;
-  color: white;
-}
-
-.section.call-to-action {
-  padding: 5rem 1.5rem 2rem;
-}
-
-.container {
-  flex-grow: 1;
-  margin: 0 auto;
-  position: relative;
-  width: auto;
-}
-
-.offset-background::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 100px; /* 向下偏移100px */
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #3490dc; /* 背景颜色 */
-  z-index: -1;
-}

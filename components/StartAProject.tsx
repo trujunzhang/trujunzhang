@@ -2,15 +2,15 @@ import React from "react";
 
 const StartAProject = () => {
   return (
-    <div className="flex flex-col md:flex-row rounded-2xl justify-between items-center px-4 md:px-6 py-4 md:py-12 bg-gray-900 mx-12 xl:mx-0">
-      <h3 className="text-2xl md:text-4xl font-bold">Start a project</h3>
+    <div className="max-w-7xl flex flex-col md:flex-row space-y-6 rounded-2xl justify-between items-center px-4 md:px-6 py-12 md:py-12 bg-gray-900 mx-12 xl:mx-10">
+      <h3 className="text-2xl xl:text-4xl font-bold">Start a project</h3>
 
-      <p className="text-sm md:text-base text-white text-center font-normal max-w-[200px] md:max-w-[450px]">
+      <p className="text-sm md:text-base text-white text-center font-normal max-w-[300px] md:max-w-[450px]">
         Interested in working together? We should queue up a time to chat. I’ll
         buy the coffee.
       </p>
 
-      <button className="flex space-x-2 rounded-lg border border-green-300 px-2 py-2">
+      <button className="flex space-x-2 rounded-2xl border border-green-300 px-8 py-4">
         <svg
           width="24"
           height="24"

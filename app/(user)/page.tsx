@@ -37,7 +37,7 @@ const Home = async (props: Props) => {
   // console.log('testimonials', testimonials[0]);
 
   return (
-    <div className="bg-green-700 text-white">
+    <div className="bg-white text-white">
       <Header socials={socials} />
 
       <section id="hero" className="snap-start">
@@ -62,8 +62,11 @@ const Home = async (props: Props) => {
         </section>
       )}
 
-      <section id="startAProject" className="relative offset-background">
-        <div className="mx-20 py-20 px-4 bg-yellow-400 z-10">
+      <section
+        id="startAProject"
+        className="pb-[80px] pt-[80px] bg-primary-700"
+      >
+        <div className="mt-[-160px] flex items-center justify-center">
           <StartAProject />
         </div>
       </section>
