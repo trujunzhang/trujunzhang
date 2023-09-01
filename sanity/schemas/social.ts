@@ -6,6 +6,12 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
+      name: "published",
+      title: "Published",
+      description: "Do you want to publish this project?",
+      type: "boolean",
+    }),
+    defineField({
       name: "title",
       title: "Title",
       description: "Platform for social media",
@@ -15,6 +21,14 @@ export default defineType({
       name: "url",
       title: "Url",
       type: "url",
+    }),
+    defineField({
+      name: "icon",
+      title: "Image of Social Media",
+      type: "image",
+      options: {
+          hotspot: true
+      }
     }),
   ],
 })

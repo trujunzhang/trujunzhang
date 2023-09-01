@@ -11,8 +11,8 @@ type Props = {
 
 const Hero = ({ pageInfo }: Props) => {
   return (
-    <div className="section-body section-padding-top flex flex-col space-y-12 md:space-y-32 items-center justify-center text-center overflow-hidden">
-      <div className="flex flex-col gap-6">
+    <div className="section-body section-padding-top flex flex-col space-y-12 md:space-y-32 items-center justify-center text-center">
+      <div className="flex flex-col gap-6 px-12 md:px-0">
         <h1 className="text-gray-800 text-xl md:text-5xl font-bold">{pageInfo?.title}</h1>
         <p className="text-base md:text-xl text-gray-700 font-medium">
           {pageInfo?.subTitle}
@@ -28,7 +28,7 @@ const Hero = ({ pageInfo }: Props) => {
         />
       </div>
 
-      <div className="relative w-full h-[400px]">
+      <div className="relative w-full h-[180px] md:h-[400px]">
         <Image
           className="object-fill"
           src={urlFor(pageInfo.heroImage).url()}

@@ -83,6 +83,7 @@ interface Social extends SanityBody {
   _type: "social";
   title: string;
   url: string;
+  icon: Image;
 }
 
 interface Image extends SanityBody {

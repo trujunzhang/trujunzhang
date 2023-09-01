@@ -2,7 +2,7 @@ import { client } from "@/sanity/sanity.client";
 import { groq } from "next-sanity";
 
 const query = groq`
-    *[_type == "social"]
+    *[_type == "social" && published == true]
 `;
 
 const getSocials = async () => {

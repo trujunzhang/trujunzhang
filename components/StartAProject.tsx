@@ -2,10 +2,10 @@ import React from "react";
 
 const StartAProject = () => {
   return (
-    <div className="max-w-7xl flex flex-col md:flex-row space-y-6 rounded-2xl justify-between items-center px-4 md:px-6 py-12 md:py-12 bg-gray-900 mx-12 xl:mx-10">
+    <div className="flex flex-col md:flex-row space-y-6 space-x-6 rounded-2xl justify-between items-center px-4 md:px-6 py-12 md:py-12 bg-gray-900 mx-12 xl:mx-10">
       <h3 className="text-2xl xl:text-4xl font-bold">Start a project</h3>
 
-      <p className="text-sm md:text-base text-white text-center font-normal max-w-[300px] md:max-w-[450px]">
+      <p className="text-sm md:text-base text-white text-center font-normal max-w-[300px] md:max-w-[400px]">
         Interested in working together? We should queue up a time to chat. I’ll
         buy the coffee.
       </p>

@@ -14,9 +14,9 @@ const Testimonials = ({ testimonial }: Props) => {
   return (
     <div className="section-body section-padding-top flex flex-col mx-auto items-center justify-center text-center mb-36">
       {/* Title Container */}
-      <div className="text-black flex flex-col items-center justify-center gap-3 md:gap-6 pb-6">
+      <div className="text-black flex flex-col items-center justify-center gap-4 md:gap-6 pb-6">
         <h1 className="text-3xl md:text-4xl font-bold">{testimonial.title}</h1>
-        <p className="max-w-[620px] text-base md:text-xl text-gray-700 font-normal">
+        <p className="max-w-[420px] md:max-w-[620px] text-base md:text-xl text-gray-700 font-normal px-8 md:px-0">
           {testimonial.description}
         </p>
       </div>
@@ -56,7 +56,7 @@ const Testimonials = ({ testimonial }: Props) => {
         {testimonial.clients.map((client, index) => (
           <div
             key={index}
-            className="flex flex-col items-center justify-center pb-20"
+            className="flex flex-col items-center justify-center pb-12 md:pb-20"
           >
             <div className="relative rounded-full w-[100px] h-[100px] my-4 md:my-12">
               <Image
@@ -68,7 +68,7 @@ const Testimonials = ({ testimonial }: Props) => {
             </div>
 
             <div className="flex flex-col gap-4 md:gap-6">
-              <p className="max-w-[600px] md:max-w-[800px] md:h-[130px] text-base md:text-xl text-gray-700 font-normal">
+              <p className="max-w-[300px] md:max-w-[800px] md:h-[130px] text-base md:text-xl text-gray-700 font-normal">
                 {client.quote}
               </p>
               <div className="flex flex-col items-center justify-center gap-1 md:gap-2">

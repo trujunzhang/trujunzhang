@@ -10,9 +10,9 @@ type Props = {
 
 const About = ({ pageInfo }: Props) => {
   return (
-    <div className="section-padding-top flex flex-col relative text-center justify-center gap-8 items-center mx-auto ">
+    <div className="section-padding-top flex flex-col relative text-center justify-center gap-8 items-center mx-auto px-6 md:px-0">
       <h3
-        className="text-2xl font-bold">
+        className="text-xl md:text-2xl font-bold">
         {pageInfo.sayHi}
       </h3>
 

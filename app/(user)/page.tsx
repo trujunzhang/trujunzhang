@@ -66,18 +66,15 @@ const Home = async (props: Props) => {
         id="startAProject"
         className="pb-[80px] pt-[80px] bg-primary-700"
       >
-        <div className="mt-[-160px] flex items-center justify-center">
+        <div className="mt-[-160px] flex flex-col items-center justify-center">
           <StartAProject />
         </div>
       </section>
 
       <section id="footer" className="bg-primary-700">
-        <Footer />
+        <Footer socials={socials} />
       </section>
 
-      <section id="contact" className="snap-start">
-        {/* <ContactMe pageInfo={pageInfo} /> */}
-      </section>
     </div>
   );
 };
