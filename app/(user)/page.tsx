@@ -40,15 +40,15 @@ const Home = async (props: Props) => {
     <div className="bg-white text-white">
       <Header />
 
-      <section id="hero" className="snap-start">
+      <section id="hero" className="">
         <Hero pageInfo={pageInfo} />
       </section>
 
-      <section id="about" className="snap-center bg-primary-700 pb-[300px]">
+      <section id="about" className="bg-primary-700 pb-[300px]">
         <About pageInfo={pageInfo} />
       </section>
 
-      <section id="skills" className="snap-start -mt-[200px]">
+      <section id="skills" className="-mt-[200px]">
         <Skills skills={skills} />
       </section>
 
