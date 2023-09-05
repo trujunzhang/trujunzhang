@@ -6,8 +6,29 @@ export default defineType({
   type: "document",
   fields: [
     defineField({
+      name: "logo",
+      title: "Logo",
+      type: "image",
+      options: {
+        hotspot: true,
+      },
+    }),
+    defineField({
+      name: "logoFooter",
+      title: "Logo of Footer",
+      type: "image",
+      options: {
+        hotspot: true,
+      },
+    }),
+    defineField({
       name: "title",
       title: "Title",
+      type: "string",
+    }),
+    defineField({
+      name: "footerTitle",
+      title: "Title of Footer",
       type: "string",
     }),
     defineField({

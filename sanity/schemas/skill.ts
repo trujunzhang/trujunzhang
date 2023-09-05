@@ -23,7 +23,7 @@ export default defineType({
       name: "description",
       title: "Description",
       description: "Description of Skill",
-      type: "string"
+      type: "text"
     }),
     defineField({
       name: "title",

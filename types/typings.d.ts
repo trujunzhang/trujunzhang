@@ -7,7 +7,10 @@ type SanityBody = {
 
 interface PageInfo extends SanityBody {
   _type: "pageInfo";
+  logo: Image;
+  logoFooter: Image;
   title: string;
+  footerTitle: string;
   subTitle: string;
   sayHi: string;
   introduce: string;

@@ -38,7 +38,7 @@ const Home = async (props: Props) => {
 
   return (
     <div className="bg-white text-white">
-      <Header />
+      <Header pageInfo={pageInfo}/>
 
       <section id="hero" className="">
         <Hero pageInfo={pageInfo} />
@@ -72,7 +72,7 @@ const Home = async (props: Props) => {
       </section>
 
       <section id="footer" className="bg-primary-700">
-        <Footer socials={socials} />
+        <Footer socials={socials} pageInfo={pageInfo}/>
       </section>
 
     </div>
