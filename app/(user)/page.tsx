@@ -1,11 +1,11 @@
+import React from "react";
+
 import About from "@/components/About";
-import ContactMe from "@/components/ContactMe";
 import Header from "@/components/header/Header";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Testimonial from "@/components/Testimonial";
-import WorkExperience from "@/components/WorkExperience";
 import StartAProject from "@/components/StartAProject";
 import Footer from "@/components/Footer";
 import {
@@ -13,13 +13,9 @@ import {
   getPageInfo,
   getProjects,
   getSkills,
-  getSocials,
   getTestimonial,
 } from "@/lib/utils";
-import { client } from "@/sanity/sanity.client";
-import { ArrowUpCircleIcon } from "@heroicons/react/24/outline";
-import Link from "next/link";
-import React from "react";
+import Wrapper from "@/components/common/Wrapper";
 
 type Props = {};
 
@@ -30,14 +26,15 @@ const Home = async (props: Props) => {
   const pageInfo: PageInfo = await getPageInfo();
   const experiences: Experience[] = await getExperience();
   const projects: Project[] = await getProjects();
-  // const socials: Social[] = await getSocials();
   const skills: Skill[] = await getSkills();
   const testimonial: Testimonial = await getTestimonial();
 
   return (
     <div className="">
       <section className="pt-[32px] pb-[32px]" id="section-header">
-        <Header pageInfo={pageInfo} />
+        <Wrapper className="">
+          <Header pageInfo={pageInfo} />
+        </Wrapper>
       </section>
 
       <section
@@ -72,7 +69,9 @@ const Home = async (props: Props) => {
         className="pb-[80px] pt-[80px] mb-[120px]"
         id="section-Testimonials"
       >
-        <Testimonial testimonial={testimonial} />
+        {/* <Wrapper className=""> */}
+          <Testimonial testimonial={testimonial} />
+        {/* </Wrapper> */}
       </section>
 
       <section

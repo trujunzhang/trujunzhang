@@ -74,9 +74,9 @@ const SkillComponent = ({ skill, index }: Props) => {
       className="list-disc space-y-[2px] flex flex-col items-center justify-center text-center pt-[64px] pb-[64px] pr-[12px] gap-[32px] pl-[12px] sm:pt-[48px] sm:pb-[48px] sm:pl-[0px] sm:pr-[0px]"
       id="skill-column-6-17"
     >
-      <div className="relative mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] pb-[0] md:pr-[24px] md:pl-[24px] pl-[0px] pr-[0px] max-w-[auto] rounded-[9999px] w-[120px] h-[120px] bg-[#10b981] bg-opacity-[100%]">
+      <div className="relative md:pr-[24px] md:pl-[24px] pl-[0px] pr-[0px] max-w-[auto] rounded-[9999px] w-[120px] h-[120px] bg-[#10b981]">
         <Image
-          className="w-[100%] h-[100%] object-fill max-w-[auto] pt-[28px] pb-[28px] pl-[28px] pr-[28px] md:pl-[8px] md:pr-[8px] md:pt-[8px] md:pb-[8px]"
+          className="object-fill p-[28px] lg:p-[18px]"
           src={urlFor(skill?.icon).url()}
           alt={skill?.title}
           fill
