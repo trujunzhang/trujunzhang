@@ -4,7 +4,7 @@ import Header from "@/components/header/Header";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
-import Testimonials from "@/components/Testimonials";
+import Testimonial from "@/components/Testimonial";
 import WorkExperience from "@/components/WorkExperience";
 import StartAProject from "@/components/StartAProject";
 import Footer from "@/components/Footer";
@@ -72,7 +72,7 @@ const Home = async (props: Props) => {
         className="pb-[80px] pt-[80px] mb-[120px]"
         id="section-Testimonials"
       >
-        <Testimonials testimonial={testimonial} />
+        <Testimonial testimonial={testimonial} />
       </section>
 
       <section
