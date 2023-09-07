@@ -2,7 +2,10 @@ import { client } from "@/sanity/sanity.client";
 import { groq } from "next-sanity";
 
 const query = groq`
-    *[_type == "pageInfo"][0]
+    *[_type == "pageInfo"][0]{
+        ...,
+        socials[]->
+    }
 `;
 
 const getPageInfo = async () => {

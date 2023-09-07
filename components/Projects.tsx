@@ -11,6 +11,7 @@ type Props = {
 }
 
 const Projects = ({ projects }: Props) => {
+if(false){
 
   return (
     <div
@@ -28,6 +29,30 @@ const Projects = ({ projects }: Props) => {
 
     </div>
   );
+  }
+
+  return (
+
+      <div
+        className="mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] pb-[0] flex justify-center items-center max-w-[auto] h-[auto] gap-[32px] flex-col rounded-[0px] pl-[0px] pr-[0px] shadow-none md:pl-[0px] md:pr-[0px]"
+        id="Container-project"
+      >
+        <h1 className="text-[48px] font-bold sm:text-[24px] text-[#374151]">
+          <strong className="">Featured Work</strong>
+        </h1>
+        <div
+          className="mt-[0] mb-[0] pt-[0] pb-[0] grid max-w-[auto] ml-[0px] mr-[0px] items-start content-stretch w-[100%] grid-cols-2 grid-rows-none grid-flow-row pl-[0px] pr-[0px] gap-[24px] md:pl-[0px] md:pr-[0px] md:gap-[12px] sm:grid-cols-1"
+          id="project-grid"
+        >
+
+
+        {projects.map((project: Project, index: number) => (
+          <ProjectComponent key={project._id} project={project} />
+        ))}
+
+        </div>
+      </div>
+  )
 }
 
 export default Projects;

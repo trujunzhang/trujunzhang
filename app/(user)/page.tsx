@@ -14,7 +14,7 @@ import {
   getProjects,
   getSkills,
   getSocials,
-  getTestimonials,
+  getTestimonial,
 } from "@/lib/utils";
 import { client } from "@/sanity/sanity.client";
 import { ArrowUpCircleIcon } from "@heroicons/react/24/outline";
@@ -30,49 +30,103 @@ const Home = async (props: Props) => {
   const pageInfo: PageInfo = await getPageInfo();
   const experiences: Experience[] = await getExperience();
   const projects: Project[] = await getProjects();
-  const socials: Social[] = await getSocials();
+  // const socials: Social[] = await getSocials();
   const skills: Skill[] = await getSkills();
-  const testimonials: Testimonial[] = await getTestimonials();
-
-  // console.log('testimonials', testimonials[0]);
+  const testimonial: Testimonial = await getTestimonial();
 
   return (
-    <div className="bg-white text-white">
+    <div className="">
+
+
+
+    <section className="pt-[32px] pb-[32px]" id="section-header">
       <Header pageInfo={pageInfo}/>
+    </section>
 
-      <section id="hero" className="">
+
+
+    <section
+      className="max-w-[1280px] 2xl:flex 2xl:flex-col 2xl:items-center 2xl:justify-center 2xl:ml-[auto] 2xl:mr-[auto] ml-[auto] mr-[auto] block pb-[0px] pt-[88px] sm:pt-[32px]"
+      id="section-hero"
+    >
         <Hero pageInfo={pageInfo} />
-      </section>
+    </section>
 
-      <section id="about" className="bg-primary-700 pb-[300px]">
+
+
+    <section
+      className="pt-[84px] pb-[280px] sm:pb-[220px] sm:pt-[56px] bg-[#7c3aed]"
+      id="section-about"
+    >
+
         <About pageInfo={pageInfo} />
-      </section>
+    </section>
 
-      <section id="skills" className="-mt-[200px]">
+
+
+
+    <section
+      className="ml-[0px] mr-[0px] bg-opacity-[100%] pt-[0px] pb-[0px] mt-[-174px]"
+      id="section-skill"
+    >
         <Skills skills={skills} />
-      </section>
+    </section>
 
-      <section id="projects" className="section-body section-padding-top">
+
+    <section
+      className="pb-[80px] pt-[80px] max-w-[1280px] ml-[auto] mr-[auto] sm:pb-[30px]"
+      id="section-project"
+    >
+
         <Projects projects={projects} />
-      </section>
+    </section>
 
-      {testimonials.length > 0 && (
-        <section id="testimonials" className="snap-center">
-          <Testimonials testimonial={testimonials[0]} />
-        </section>
-      )}
 
-      <section
-        id="startAProject"
-        className="pb-[80px] pt-[80px] bg-primary-700"
-      >
-        <div className="mt-[-160px] flex flex-col items-center justify-center">
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section
+      className="pb-[80px] pt-[80px] mb-[120px]"
+      id="section-Testimonials"
+    >
+
+          <Testimonials testimonial={testimonial} />
+    </section>
+
+
+
+    <section
+      className="pb-[80px] pt-[80px] ml-[auto] mr-[auto] max-w-[auto] bg-[#7c3aed]"
+      id="Section-doit"
+    >
           <StartAProject />
-        </div>
-      </section>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <section id="footer" className="bg-primary-700">
-        <Footer socials={socials} pageInfo={pageInfo}/>
+        <Footer pageInfo={pageInfo}/>
       </section>
 
     </div>

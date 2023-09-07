@@ -6,6 +6,15 @@ export default defineType({
   type: "document",
   fields: [
     defineField({
+      name: "madeIcon",
+      title: "Made with Icon",
+      type: "image",
+      options: {
+        hotspot: true,
+      },
+    }),
+
+    defineField({
       name: "logo",
       title: "Logo",
       type: "image",

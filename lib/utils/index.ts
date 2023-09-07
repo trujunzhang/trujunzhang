@@ -3,7 +3,7 @@ import getPageInfo from "./getPageInfo";
 import getProjects from "./getProjects";
 import getSkills from "./getSkills";
 import getSocials from "./getSocials";
-import getTestimonials from "./getTestimonials";
+import getTestimonial from "./getTestimonial";
 
 export {
   getExperience,
@@ -11,5 +11,5 @@ export {
   getProjects,
   getSkills,
   getSocials,
-  getTestimonials,
+  getTestimonial,
 };
