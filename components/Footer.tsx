@@ -10,7 +10,7 @@ const Footer = ({ pageInfo }: Props) => {
 
   const SocialIcons = () => {
     return (
-      <div className="flex space-x-3 md:space-x-10">
+      <div className="flex space-x-10 md:space-x-3">
         {socials.map((social) => (
           <div
             key={social._id}
@@ -30,7 +30,7 @@ const Footer = ({ pageInfo }: Props) => {
 
   return (
     <div
-      className="max-w-[80rem] mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] pr-[32px] pb-[0] pl-[32px] md:pr-[24px] md:pl-[24px] flex flex-col items-center justify-center gap-[48px]"
+      className="pr-[32px] pb-[0] pl-[32px] md:pr-[24px] md:pl-[24px] flex flex-col items-center justify-center gap-[48px]"
       id="Container-footer-5-13"
     >
       <div

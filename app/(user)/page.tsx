@@ -75,13 +75,13 @@ const Home = async (props: Props) => {
       </section>
 
       <section
-        className="pb-[80px] pt-[80px] ml-[auto] mr-[auto] max-w-[auto] bg-[#7c3aed]"
+        className="pb-[60px] pt-[80px] ml-[auto] mr-[auto] max-w-[auto] bg-[#7c3aed]"
         id="Section-doit"
       >
         <StartAProject pageInfo={pageInfo} />
       </section>
 
-      <section className="pt-[40px] pb-[80px] bg-[#7c3aed]" id="Section-footer">
+      <section className="pt-[40px] pb-[40px] bg-[#7c3aed]" id="Section-footer">
         <Footer pageInfo={pageInfo} />
       </section>
     </div>
