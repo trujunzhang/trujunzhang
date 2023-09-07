@@ -10,6 +10,8 @@ interface PageInfo extends SanityBody {
   madeIcon: Image;
   logo: Image;
   logoFooter: Image;
+  githubUrl: string;
+  upworkUrl: string;
   title: string;
   footerTitle: string;
   subTitle: string;

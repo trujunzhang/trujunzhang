@@ -1,10 +1,9 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
-import urlFor from "@/lib/urlFor";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
+import TestimonialComponent from "./TestimonialComponent";
 
 type Props = {
   testimonial: Testimonial;
@@ -49,35 +48,7 @@ const Testimonial = ({ testimonial }: Props) => {
       >
         {testimonial.clients.map((client, index) => (
           <div key={index} className="pb-[30px] w-full">
-            <div
-              className="max-w-[80rem] mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] pr-[32px] pb-[0] pl-[32px] md:pr-[24px] md:pl-[24px] flex flex-col items-center justify-center gap-[96px] sm:gap-[42px] sm:pl-[0px] sm:pr-[0px]"
-              id="Container-slide-item-11-31"
-            >
-              <div className="max-w-[80rem] mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] pr-[32px] pb-[0] pl-[32px] md:pr-[24px] md:pl-[24px] flex flex-col items-center justify-center gap-[24px] text-center sm:pl-[0px] sm:pr-[0px]">
-                <div
-                  className="relative mt-[0] mb-[0] pt-[0] pb-[0] max-w-[auto] pl-[0px] pr-[0px] ml-[0px] mr-[0px] rounded-[9999px] w-[150px] h-[150px] md:pl-[0px] md:pr-[0px] sm:w-[100px] sm:h-[100px]"
-                  id="Container-image-11-31"
-                >
-                  <Image
-                    className=" rounded-full object-cover"
-                    src={urlFor(client.avatar).url()}
-                    fill
-                    alt="client's avatar"
-                  />
-                </div>
-                <p className="max-w-[768px] text-[18px] font-normal sm:text-[12px] sm:max-w-[768px]">
-                  {client.quote}
-                </p>
-              </div>
-              <div className="max-w-[80rem] mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] pr-[32px] pb-[0] pl-[32px] md:pr-[24px] md:pl-[24px] flex items-center justify-center flex-col gap-[8px] sm:pl-[0px] sm:pr-[0px]">
-                <span className="text-[20px] font-bold sm:text-[14px]">
-                  {client.name}
-                </span>{" "}
-                <span className="text-[18px] font-normal sm:text-[12px]">
-                  {client.role}
-                </span>
-              </div>
-            </div>
+            <TestimonialComponent client={client} />
           </div>
         ))}
       </Carousel>
@@ -97,8 +68,17 @@ const Testimonial = ({ testimonial }: Props) => {
           {testimonial.description}
         </p>
       </div>
-      <div className="max-w-[80rem] mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] pr-[32px] pb-[0] pl-[32px] md:pr-[24px] md:pl-[24px] flex flex-col items-center justify-center gap-[24px] sm:pl-[12px] sm:pr-[12px]">
+      {/* Show client on desktop */}
+      <div className="block md:hidden max-w-[80rem] pt-[0] pr-[32px] pb-[0] pl-[32px] md:pr-[24px] md:pl-[24px] flex flex-col items-center justify-center gap-[24px] sm:pl-[12px] sm:pr-[12px]">
         {renderSlides()}
+      </div>
+      {/* Show client on mobile */}
+      <div className="hidden md:block flex flex-col justify-center space-y-8">
+        {testimonial.clients.map((client, index) => (
+          <div key={index} className="">
+            <TestimonialComponent client={client} />
+          </div>
+        ))}
       </div>
     </div>
   );

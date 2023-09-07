@@ -31,6 +31,16 @@ export default defineType({
       },
     }),
     defineField({
+      name: "githubUrl",
+      title: "Github Url",
+      type: "string",
+    }),
+    defineField({
+      name: "upworkUrl",
+      title: "Upwork Url",
+      type: "string",
+    }),
+    defineField({
       name: "title",
       title: "Title",
       type: "string",

@@ -15,17 +15,21 @@ const Header = ({ pageInfo }: Props) => {
   const rightMenu = () => {
     return (
       <div className="md:pr-[24px] md:pl-[24px] ml-[0px] mr-[0px] flex gap-[24px] items-center pr-[0px] pl-[0px] sm:pr-[0px] sm:gap-[12px] flex flex-row md:flex-col">
-        <a className="text-[#000000] focus:outline-none font-normal text-[18px] not-italic no-underline">
+        <Link
+          href={pageInfo.githubUrl || ""}
+          className="text-[#000000] focus:outline-none font-normal text-[18px] cursor-pointer hover:underline"
+        >
           github
-        </a>
-        <button
-          className="text-white text-[14px] border-solid rounded-[24px] border-[2px] pl-[16px] pr-[16px] pt-[4px] pb-[4px] sm:pl-[12px] sm:pr-[12px] border-[#7c3aed]"
+        </Link>
+        <Link
+          href={pageInfo.upworkUrl||""}
+          className="text-[14px] border-solid rounded-[24px] border-[2px] pl-[16px] pr-[16px] pt-[4px] pb-[4px] sm:pl-[12px] sm:pr-[12px] border-primary-600 hover:bg-primary-600"
           type="button"
         >
-          <span className="font-normal text-[18px] text-[#7c3aed]">
-            Hire me
+          <span className="font-normal text-[18px] text-primary-600 hover:text-white">
+            hire me
           </span>
-        </button>
+        </Link>
       </div>
     );
   };
