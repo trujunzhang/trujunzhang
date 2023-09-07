@@ -23,6 +23,7 @@ interface PageInfo extends SanityBody {
   name: string;
   phoneNumber: string;
   profilePicture: Image;
+  socials: Social[];
 }
 
 interface Experience extends SanityBody {
