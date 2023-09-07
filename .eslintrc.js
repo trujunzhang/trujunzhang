@@ -10,7 +10,7 @@ module.exports = {
       rules: {
         // 'ycode-tailwindcss'
         // "ycode-tailwindcss/no-low-tags": "error",
-        "ycode-tailwindcss/tw-original-classname": "error",
+        // "ycode-tailwindcss/tw-original-classname": "error",
       },
     },
   ],
