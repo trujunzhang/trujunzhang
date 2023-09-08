@@ -42,16 +42,13 @@ const Home = async () => {
       </section>
 
       <section
-        className="pt-[84px] pb-[280px] sm:pb-[220px] sm:pt-[56px] bg-[#7c3aed]"
+        className="pt-[84px] pb-[280px] xl:pb-[180px] sm:pb-[220px] sm:pt-[56px] bg-[#7c3aed]"
         id="section-about"
       >
         <About pageInfo={pageInfo} />
       </section>
 
-      <section
-        className="mt-[-174px]"
-        id="section-skill"
-      >
+      <section className="mt-[-174px]" id="section-skill">
         <Skills skills={skills} />
       </section>
 
@@ -60,24 +57,21 @@ const Home = async () => {
         id="section-project"
       >
         <Wrapper className="">
-        <Projects projects={projects} />
+          <Projects projects={projects} />
         </Wrapper>
       </section>
 
-      <section
-        className="py-[80px] mb-[120px]"
-        id="section-Testimonials"
-      >
-        {/* <Wrapper className=""> */}
+      <section className="py-[80px] mb-[120px]" id="section-Testimonials">
         <Testimonial testimonial={testimonial} />
-        {/* </Wrapper> */}
       </section>
 
       <section
-        className="pb-[60px] pt-[80px] ml-[auto] mr-[auto] max-w-[auto] bg-[#7c3aed]"
+        className="pb-[60px] pt-[80px] mx-[auto] bg-[#7c3aed]"
         id="Section-doit"
       >
-        <StartAProject pageInfo={pageInfo} />
+        <Wrapper className="">
+          <StartAProject pageInfo={pageInfo} />
+        </Wrapper>
       </section>
 
       <section className="pt-[40px] pb-[40px] bg-[#7c3aed]" id="Section-footer">

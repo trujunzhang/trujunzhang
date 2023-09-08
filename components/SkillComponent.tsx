@@ -28,7 +28,7 @@ const SkillComponent = ({ skill, index }: Props) => {
 
   return (
     <div
-      className="space-y-[2px] flex flex-col items-center justify-center text-center p-[64px] p-[12px] gap-[32px] sm:p-[48px]"
+      className="space-y-[2px] flex flex-col items-center justify-center text-center p-[64px] p-[12px] gap-[32px] xl:p-[18px] md:p-[48px]"
       id="skill-column-6-17"
     >
       <div className="relative md:p-[24px] rounded-[9999px] w-[120px] h-[120px] bg-[#10b981]">

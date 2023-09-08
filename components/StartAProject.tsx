@@ -7,7 +7,7 @@ type Props = {
 const StartAProject = ({ pageInfo }: Props) => {
   return (
     <div
-      className="mb-[0] bg-[#020202] bg-opacity-[100%] rounded-[24px] flex pl-[48px] pr-[48px] gap-[24px] items-center justify-between pt-[56px] pb-[56px] max-w-[1280px] ml-[auto] mr-[auto] mt-[-160px] lg:ml-[32px] lg:mr-[32px] md:pt-[36px] md:pb-[36px] md:ml-[16px] md:mr-[16px] md:pl-[32px] md:pr-[32px] sm:flex-col sm:items-center sm:justify-center sm:text-center"
+      className="bg-[#020202] bg-opacity-[100%] rounded-[24px] flex px-[48px] gap-[24px] xl:gap-[36px] md:gap-[24px] items-center justify-between py-[56px] mt-[-160px] xl:mx-[32px]  md:py-[36px] md:mx-[16px] md:px-[32px] xl:flex-col sm:items-center xl:justify-center xl:text-center"
       id="Container-doit"
     >
       <h1 className="font-bold w-[340px] text-[30px] md:text-[24px] text-[#ffffff]">

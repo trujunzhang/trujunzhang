@@ -12,7 +12,7 @@ const TestimonialComponent = ({ client }: Props) => {
       className="px-[32px] md:px-[24px] flex flex-col items-center justify-center gap-[96px] sm:gap-[42px]"
       id="Container-slide-item-11-31"
     >
-      <div className=" px-[32px] md:px-[24px] flex flex-col items-center justify-center gap-[24px] text-center">
+      <div className="px-[32px] md:px-[24px] flex flex-col items-center justify-center gap-[24px] text-center">
         <div
           className="relative rounded-[9999px] w-[150px] h-[150px] sm:w-[100px] sm:h-[100px]"
           id="Container-image-11-31"

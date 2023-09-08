@@ -47,7 +47,7 @@ const Testimonial = ({ testimonial }: Props) => {
         }}
       >
         {testimonial.clients.map((client, index) => (
-          <div key={index} className="pb-[30px] w-full">
+          <div key={index} className="pb-[48px] w-full">
             <TestimonialComponent client={client} />
           </div>
         ))}
@@ -56,7 +56,7 @@ const Testimonial = ({ testimonial }: Props) => {
   };
 
   return (
-    <div className="px-[32px] md:px-[24px] flex flex-col items-center gap-[56px]">
+    <div className="px-[32px] xl:mx-[148px] md:px-[24px] flex flex-col items-center gap-[56px]">
       <div
         className="max-w-[80rem]  px-[32px] md:px-[24px] flex flex-col items-center gap-[8px]"
         id="Container-top-11-31"
@@ -69,7 +69,7 @@ const Testimonial = ({ testimonial }: Props) => {
         </p>
       </div>
       {/* Show client on desktop */}
-      <div className="block md:hidden  px-[32px] md:px-[24px]  flex flex-col items-center justify-center gap-[24px] sm:px-[12px]">
+      <div className="block md:hidden px-[32px] md:px-[24px]  flex flex-col items-center justify-center gap-[24px] sm:px-[12px]">
         {renderSlides()}
       </div>
       {/* Show client on mobile */}
