@@ -15,7 +15,7 @@ const Hero = ({ pageInfo }: Props) => {
       <div className="space-y-[2px] list-none block pl-[0px]">
         <li className="flex flex-col items-center justify-center gap-[128px] text-center sm:gap-[48px]">
           <div className="p-[32px] md:p-[24px] sm:p-[16px] flex flex-col gap-[8px] justify-center items-center">
-            <span className="font-bold text-[36px] sm:text-[18px] md:text-[20px] lg:text-[20px]">
+            <span className="font-bold text-[36px] sm:text-[18px] md:text-[20px] lg:text-[28px]">
               {pageInfo?.title}
             </span>
             <p className="text-[20px] font-normal sm:text-[14px] sm:max-w-[240px]">
