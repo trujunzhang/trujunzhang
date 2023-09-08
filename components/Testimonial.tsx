@@ -56,7 +56,7 @@ const Testimonial = ({ testimonial }: Props) => {
   };
 
   return (
-    <div className="px-[32px] xl:mx-[148px] md:px-[24px] flex flex-col items-center gap-[56px]">
+    <div className="px-[32px] xl:mx-[148px] lg:mx-[0px] md:px-[24px] flex flex-col items-center gap-[56px]">
       <div
         className="max-w-[80rem]  px-[32px] md:px-[24px] flex flex-col items-center gap-[8px]"
         id="Container-top-11-31"
