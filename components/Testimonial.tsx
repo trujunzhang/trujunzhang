@@ -56,20 +56,20 @@ const Testimonial = ({ testimonial }: Props) => {
   };
 
   return (
-    <div className="mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] pr-[32px] pb-[0] pl-[32px] md:pr-[24px] md:pl-[24px] flex flex-col items-center gap-[56px] max-w-[auto]">
+    <div className="px-[32px] md:px-[24px] flex flex-col items-center gap-[56px]">
       <div
-        className="max-w-[80rem] mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] pr-[32px] pb-[0] pl-[32px] md:pr-[24px] md:pl-[24px] flex flex-col items-center gap-[8px]"
+        className="max-w-[80rem]  px-[32px] md:px-[24px] flex flex-col items-center gap-[8px]"
         id="Container-top-11-31"
       >
         <h1 className="text-[48px] font-bold sm:text-[24px]">
           {testimonial.title}
         </h1>
-        <p className="text-center text-[18px] max-w-[640px] sm:text-[14px]">
+        <p className="text-center text-[18px] max-w-[640px] sm:max-w-[300px] sm:text-[14px]">
           {testimonial.description}
         </p>
       </div>
       {/* Show client on desktop */}
-      <div className="block md:hidden max-w-[80rem] pt-[0] pr-[32px] pb-[0] pl-[32px] md:pr-[24px] md:pl-[24px] flex flex-col items-center justify-center gap-[24px] sm:pl-[12px] sm:pr-[12px]">
+      <div className="block md:hidden  px-[32px] md:px-[24px]  flex flex-col items-center justify-center gap-[24px] sm:px-[12px]">
         {renderSlides()}
       </div>
       {/* Show client on mobile */}

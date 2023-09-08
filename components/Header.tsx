@@ -21,14 +21,15 @@ const Header = ({ pageInfo }: Props) => {
         >
           github
         </Link>
-        <Link
-          href={pageInfo.upworkUrl||""}
-          className="text-[14px] border-solid rounded-[24px] border-[2px] pl-[16px] pr-[16px] pt-[4px] pb-[4px] sm:pl-[12px] sm:pr-[12px] border-primary-600 hover:bg-primary-600"
-          type="button"
-        >
-          <span className="font-normal text-[18px] text-primary-600 hover:text-white">
-            hire me
-          </span>
+        <Link href={pageInfo.upworkUrl || ""}>
+          <button
+            className="text-[14px] rounded-[24px] border-[2px] pl-[16px] pr-[16px] pt-[4px] pb-[4px] sm:pl-[12px] sm:pr-[12px] border border-primary-600 hover:bg-primary-600"
+            type="button"
+          >
+            <span className="font-normal text-[18px] text-primary-600 hover:text-white">
+              hire me
+            </span>
+          </button>
         </Link>
       </div>
     );
@@ -56,12 +57,12 @@ const Header = ({ pageInfo }: Props) => {
         <div className="hidden md:flex">
           {open ? (
             <VscChromeClose
-              className="text-[16px]"
+              className="text-[24px]"
               onClick={() => setOpen(false)}
             />
           ) : (
             <BiMenuAltRight
-              className="text-[20px]"
+              className="text-[28px]"
               onClick={() => setOpen(true)}
             />
           )}

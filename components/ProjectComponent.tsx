@@ -29,7 +29,7 @@ const ProjectComponent = ({ project }: Props) => {
       >
           {/* Left Image Container */}
           {project.mobileImage && (
-            <div className="shrink-0 w-[280px] h-full max-w-[auto] relative">
+            <div className="shrink-0 w-[280px] sm:w-[180px] h-full max-w-[auto] relative">
               <Image
                 className="h-[100%] w-[auto] max-w-[auto]"
                 src={urlFor(project.mobileImage).url()}

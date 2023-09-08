@@ -26,57 +26,14 @@ const SkillComponent = ({ skill, index }: Props) => {
     },
   };
 
-  if (false) {
-    return (
-      <div
-        className={`flex flex-col items-center text-center gap-8 text-gray-800 pt-0 md:pt-8 sm:pt-20 pb-0 md:pb-8 sm:pb-16 ${
-          index !== 2 && "border-r-0 lg:border-r-1"
-        }`}
-      >
-        {/* skill header */}
-        <div className="flex flex-col items-center gap-4">
-          <div className="relative w-24 h-24 rounded-full bg-green-500 my-4">
-            <Image
-              src={urlFor(skill?.icon).url()}
-              alt={skill?.title}
-              className="object-center p-5"
-              fill
-            />
-          </div>
-          <h1 className="text-2xl font-bold">{skill?.name}</h1>
-          <p className="max-w-[320px] text-sm font-base sm:px-0 md:px-6 lg:px-0">
-            {skill?.description}
-          </p>
-        </div>
-
-        {/* skill title*/}
-        <div className="flex flex-col items-center gap-3">
-          <h3 className="font-normal text-primary-600">{skill.title}</h3>
-          <p>{skill.subTitle}</p>
-        </div>
-
-        <div className="flex flex-col items-center gap-2">
-          <h3 className="font-normal text-primary-600 pb-1">
-            {skill.skillTitle}
-          </h3>
-          <PortableText
-            value={skill.skill}
-            onMissingComponent={false}
-            components={components as any}
-          />
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div
-      className="list-disc space-y-[2px] flex flex-col items-center justify-center text-center pt-[64px] pb-[64px] pr-[12px] gap-[32px] pl-[12px] sm:pt-[48px] sm:pb-[48px] sm:pl-[0px] sm:pr-[0px]"
+      className="space-y-[2px] flex flex-col items-center justify-center text-center p-[64px] p-[12px] gap-[32px] sm:p-[48px]"
       id="skill-column-6-17"
     >
-      <div className="relative md:pr-[24px] md:pl-[24px] pl-[0px] pr-[0px] max-w-[auto] rounded-[9999px] w-[120px] h-[120px] bg-[#10b981]">
+      <div className="relative md:p-[24px] rounded-[9999px] w-[120px] h-[120px] bg-[#10b981]">
         <Image
-          className="object-fill p-[28px] lg:p-[18px]"
+          className="object-fill p-[28px] lg:p-[18px] sm:p-[28px]"
           src={urlFor(skill?.icon).url()}
           alt={skill?.title}
           fill

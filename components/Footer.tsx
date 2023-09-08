@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import urlFor from "@/lib/urlFor";
+import Link from "next/link";
 
 type Props = {
   pageInfo: PageInfo;
@@ -12,17 +13,16 @@ const Footer = ({ pageInfo }: Props) => {
     return (
       <div className="flex space-x-10 md:space-x-3">
         {socials.map((social) => (
-          <div
-            key={social._id}
-            className="relative rounded-full border-2 border-primary-300 w-[48px] h-[48px]"
-          >
-            <Image
-              className="object-fit p-[12px]"
-              src={urlFor(social?.icon).url()}
-              fill
-              alt={social?.title}
-            />
-          </div>
+          <Link key={social._id} href={social?.url || ""}>
+            <button className="relative rounded-full border-2 border-primary-300 w-[48px] h-[48px] sm:w-[40px] sm:h-[40px]">
+              <Image
+                className="object-fit p-[12px] sm:p-[8px]"
+                src={urlFor(social?.icon).url()}
+                fill
+                alt={social?.title}
+              />
+            </button>
+          </Link>
         ))}
       </div>
     );
@@ -30,7 +30,7 @@ const Footer = ({ pageInfo }: Props) => {
 
   return (
     <div
-      className="pr-[32px] pb-[0] pl-[32px] md:pr-[24px] md:pl-[24px] flex flex-col items-center justify-center gap-[48px]"
+      className="px-[32px] md:px-[24px] flex flex-col items-center justify-center gap-[48px]"
       id="Container-footer-5-13"
     >
       <div
