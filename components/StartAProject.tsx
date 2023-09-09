@@ -22,7 +22,7 @@ const StartAProject = ({ pageInfo }: Props) => {
       </div>
       {/* right button */}
 
-      <Link href={pageInfo.upworkUrl || ""}>
+      <Link href={pageInfo.upworkUrl || ""} target="_blank">
         <button className="cursor-pointer px-[32px] md:px-[24px] flex gap-[16px] py-[16px] border-[1px] rounded-[16px] w-[240px] md:py-[12px] sm:w-[180px] sm:justify-center border-green-300 hover:bg-green-300 text-white hover:text-black fill-white hover:fill-black">
           <svg
             width="24"

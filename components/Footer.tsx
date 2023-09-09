@@ -13,7 +13,7 @@ const Footer = ({ pageInfo }: Props) => {
     return (
       <div className="flex space-x-10 md:space-x-3">
         {socials.map((social) => (
-          <Link key={social._id} href={social?.url || ""}>
+          <Link key={social._id} href={social?.url || ""} target="_blank">
             <button className="relative rounded-full border-2 border-primary-300 w-[48px] h-[48px] sm:w-[40px] sm:h-[40px]">
               <Image
                 className="object-fit p-[12px] sm:p-[8px]"

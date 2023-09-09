@@ -14,16 +14,17 @@ const Header = ({ pageInfo }: Props) => {
   const [open, setOpen] = useState(false);
   const rightMenu = () => {
     return (
-      <div className="md:px-[24px] flex gap-[24px] items-center sm:gap-[12px] flex flex-row xl:flex-col">
+      <div className="md:px-[24px] gap-[24px] items-center sm:gap-[12px] flex flex-row xl:flex-col">
         <Link
           href={pageInfo.githubUrl || ""}
+          target="_blank"
           className="text-[#000000] focus:outline-none font-normal text-[18px] cursor-pointer hover:underline"
         >
           github
         </Link>
-        <Link href={pageInfo.upworkUrl || ""}>
+        <Link href={pageInfo.upworkUrl || ""} target="_blank">
           <button
-            className="text-[14px] rounded-[24px] border-[2px] px-[16px] py-[4px] sm:px-[12px] border border-primary-600 hover:bg-primary-600"
+            className="text-[14px] rounded-[24px] border-[2px] px-[16px] py-[4px] sm:px-[12px] border-primary-600 hover:bg-primary-600"
             type="button"
           >
             <span className="font-normal text-[18px] text-primary-600 hover:text-white">
