@@ -112,6 +112,34 @@ export default defineType({
       type: "string",
     }),
     defineField({
+      name: "skills",
+      title: "Skills",
+      type: "array",
+      of: [
+        {
+          type: "reference",
+          to: { type: "skill" },
+        },
+      ],
+    }),
+    defineField({
+      name: "projects",
+      title: "Projects",
+      type: "array",
+      of: [
+        {
+          type: "reference",
+          to: { type: "project" },
+        },
+      ],
+    }),
+    {
+      name: "testimonial",
+      title: "Current Testimonial",
+      type: "reference",
+      to: { type: "testimonial" }
+    },
+    defineField({
       name: "socials",
       title: "Socials",
       type: "array",

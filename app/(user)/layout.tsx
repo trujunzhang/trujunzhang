@@ -5,9 +5,9 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Zhang | Portfolio",
+  title: "Zhang | Designer, Frontend Developer & Mobile",
   description:
-    "Welcome to Zhang's Portfolio! I am a skilled and passionate full-stack developer with expertise in creating robust and user-friendly web applications. Explore my diverse range of projects, demonstrating proficiency in various front-end and back-end technologies. Connect with me to discuss exciting opportunities or to start a new project together.",
+    "I design and code beautifully simple things, and I love what I do.",
   keywords: [
     "Portfolio",
     "Next.js",
@@ -17,10 +17,10 @@ export const metadata: Metadata = {
     "Developer",
   ],
   openGraph: {
-    title: "Zhang | Portfolio",
+    title: "Zhang | Designer, Frontend Developer & Mobile",
     description:
-      "Welcome to Zhang's Portfolio! I am a skilled and passionate full-stack developer with expertise in creating robust and user-friendly web applications. Explore my diverse range of projects, demonstrating proficiency in various front-end and back-end technologies. Connect with me to discuss exciting opportunities or to start a new project together.",
-    url: "https://aviral.xyz",
+      "I design and code beautifully simple things, and I love what I do.",
+    url: "https://trujunzhang.com",
     siteName: "Zhang's Portfolio",
     images: [
       {

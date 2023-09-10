@@ -25,6 +25,9 @@ interface PageInfo extends SanityBody {
   name: string;
   phoneNumber: string;
   profilePicture: Image;
+  skills: Skill[];
+  projects: Project[];
+  testimonial: Testimonial;
   socials: Social[];
 }
 

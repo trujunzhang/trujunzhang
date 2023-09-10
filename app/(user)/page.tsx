@@ -19,10 +19,14 @@ import {
 
 const Home = async () => {
   const pageInfo: PageInfo = await getPageInfo();
-  const experiences: Experience[] = await getExperience();
-  const projects: Project[] = await getProjects();
-  const skills: Skill[] = await getSkills();
-  const testimonial: Testimonial = await getTestimonial();
+
+  const projects: Project[] = pageInfo.projects;
+  const skills: Skill[] = pageInfo.skills;
+  const testimonial: Testimonial = pageInfo.testimonial;
+
+  // const projects: Project[] = await getProjects();
+  // const skills: Skill[] = await getSkills();
+  // const testimonial: Testimonial = await getTestimonial();
 
   return (
     <div className="">
