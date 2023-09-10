@@ -24,13 +24,13 @@ const ExperienceCard = ({ experience }: Props) => {
         <p className='font-bold text-xl mt-1'>{experience.company}</p>
         <div className='flex space-x-2 my-2'>
           {/* Tech Used */}
-          {experience.technologies.map((technology) => (
+          {/* {experience.technologies.map((technology) => (
             <img
               key={technology._id}
               className='h-8 w-8 rounded-full object-cover object-center' 
               src={urlFor(technology.image).url()} 
               alt={technology.title} />
-          ))}
+          ))} */}
         </div>
         <p className='uppercase py-5 text-gray-300 text-sm'>
           {new Date(experience.dateStarted).toDateString()} - {" "}

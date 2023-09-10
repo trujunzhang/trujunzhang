@@ -24,7 +24,7 @@ const ProjectComponent = ({ project }: Props) => {
       </div>
       {/* foreground container */}
       <div
-        className="w-[100%] absolute top-[0px] left-[0px] h-[100%] flex bg-[#000000] bg-opacity-[60%] opacity-0 group-hover:opacity-100"
+        className="w-[100%] absolute top-[0px] left-[0px] h-[100%] flex bg-black bg-opacity-[60%] opacity-0 group-hover:opacity-100"
         id="Project-foreground-7-24"
       >
           {/* Left Image Container */}
@@ -44,10 +44,10 @@ const ProjectComponent = ({ project }: Props) => {
           className="flex-1 pr-[32px] pb-[0] pl-[32px] md:pr-[24px] md:pl-[24px] flex-1 flex flex-col items-center justify-center gap-[12px] sm:pr-[8px] sm:pl-[8px]"
           id="Container-right-7-24"
         >
-          <h1 className="font-bold text-[30px] md:text-[20px] md:text-center text-[#ffffff]">
+          <h1 className="font-bold text-3xl md:text-xl md:text-center text-white">
             {project.title}
           </h1>
-          <p className="text-center text-[14px] md:text-[12px] text-[#ffffff]">
+          <p className="text-center text-sm md:text-xs text-white">
             {project.summary}
           </p>
         </div>

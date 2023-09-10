@@ -23,7 +23,7 @@ const Testimonial = ({ testimonial }: Props) => {
           if (isSelected) {
             return (
               <li
-                className="inline-block w-[16px] h-[16px] rounded-[9999px] bg-[#7c3aed] mx-1"
+                className="inline-block w-[16px] h-[16px] rounded-full bg-primary-600 mx-1"
                 id="Container-active-11-31"
                 aria-label={`Selected: ${label} ${index + 1}`}
                 title={`Selected: ${label} ${index + 1}`}
@@ -32,7 +32,7 @@ const Testimonial = ({ testimonial }: Props) => {
           }
           return (
             <li
-              className="inline-block w-[16px] h-[16px] rounded-[9999px] border-[2px] border-[#d1d5db] mx-1"
+              className="inline-block w-[16px] h-[16px] rounded-full border-2 border-gray-300 mx-1"
               id="Container-deactive-11-31"
               onClick={onClickHandler}
               onKeyDown={onClickHandler}
@@ -61,10 +61,10 @@ const Testimonial = ({ testimonial }: Props) => {
         className="max-w-[80rem]  px-[32px] md:px-[24px] flex flex-col items-center gap-[8px]"
         id="Container-top-11-31"
       >
-        <h1 className="text-[48px] font-bold sm:text-[24px]">
+        <h1 className="text-5xl font-bold sm:text-2xl">
           {testimonial.title}
         </h1>
-        <p className="text-center text-[18px] max-w-[640px] sm:max-w-[300px] sm:text-[14px]">
+        <p className="text-center text-lg max-w-[640px] sm:max-w-[300px] sm:text-sm">
           {testimonial.description}
         </p>
       </div>

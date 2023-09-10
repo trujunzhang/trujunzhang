@@ -42,7 +42,7 @@ const Home = async () => {
       </section>
 
       <section
-        className="pt-[84px] pb-[280px] xl:pb-[180px] sm:pb-[220px] sm:pt-[56px] bg-[#7c3aed]"
+        className="pt-[84px] pb-[280px] xl:pb-[180px] sm:pb-[220px] sm:pt-[56px] bg-primary-600"
         id="section-about"
       >
         <About pageInfo={pageInfo} />
@@ -66,7 +66,7 @@ const Home = async () => {
       </section>
 
       <section
-        className="pb-[60px] pt-[80px] mx-[auto] bg-[#7c3aed]"
+        className="pb-[60px] pt-[80px] mx-[auto] bg-primary-600"
         id="Section-doit"
       >
         <Wrapper className="">
@@ -74,7 +74,7 @@ const Home = async () => {
         </Wrapper>
       </section>
 
-      <section className="pt-[40px] pb-[40px] bg-[#7c3aed]" id="Section-footer">
+      <section className="pt-[40px] pb-[40px] bg-primary-600" id="Section-footer">
         <Footer pageInfo={pageInfo} />
       </section>
     </div>

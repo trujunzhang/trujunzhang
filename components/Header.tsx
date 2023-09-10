@@ -18,16 +18,16 @@ const Header = ({ pageInfo }: Props) => {
         <Link
           href={pageInfo.githubUrl || ""}
           target="_blank"
-          className="text-[#000000] focus:outline-none font-normal text-[18px] cursor-pointer hover:underline"
+          className="text-black focus:outline-none font-normal text-lg cursor-pointer hover:underline"
         >
           github
         </Link>
         <Link href={pageInfo.upworkUrl || ""} target="_blank">
           <button
-            className="text-[14px] rounded-[24px] border-[2px] px-[16px] py-[4px] sm:px-[12px] border-primary-600 hover:bg-primary-600"
+            className="text-sm rounded-3xl border-2 px-[16px] py-[4px] sm:px-[12px] border-primary-600 hover:bg-primary-600"
             type="button"
           >
-            <span className="font-normal text-[18px] text-primary-600 hover:text-white">
+            <span className="font-normal text-lg text-primary-600 hover:text-white">
               hire me
             </span>
           </button>
@@ -58,7 +58,7 @@ const Header = ({ pageInfo }: Props) => {
         <div className="hidden xl:flex">
           {open ? (
             <VscChromeClose
-              className="text-[24px]"
+              className="text-2xl"
               onClick={() => setOpen(false)}
             />
           ) : (

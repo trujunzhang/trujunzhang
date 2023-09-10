@@ -34,9 +34,9 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          300: colors.purple["300"],
-          600: colors.purple["600"],
-          700: colors.purple["700"],
+          300: colors.violet["300"],
+          600: colors.violet["600"],
+          700: colors.violet["700"],
         },
       },
       backgroundImage: {

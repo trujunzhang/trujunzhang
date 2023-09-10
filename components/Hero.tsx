@@ -15,16 +15,16 @@ const Hero = ({ pageInfo }: Props) => {
       <div className="space-y-[2px] list-none block pl-[0px]">
         <li className="flex flex-col items-center justify-center gap-[128px] text-center sm:gap-[48px]">
           <div className="p-[32px] md:p-[24px] sm:p-[16px] flex flex-col gap-[8px] justify-center items-center">
-            <span className="font-bold text-[36px] sm:text-[18px] md:text-[20px] lg:text-[28px]">
+            <span className="font-bold text-4xl sm:text-lg md:text-xl lg:text-[28px]">
               {pageInfo?.title}
             </span>
-            <p className="text-[20px] font-normal sm:text-[14px] sm:max-w-[240px]">
+            <p className="text-xl font-normal sm:text-sm sm:max-w-[240px]">
               {pageInfo?.subTitle}
             </p>
           </div>
-          <div className="relative mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] pb-[0] md:pr-[24px] md:pl-[24px] pl-[0px] pr-[0px] rounded-[9999px] border-[4px] w-[240px] h-[240px] max-w-[auto] sm:pl-[0px] sm:pr-[0px] sm:w-[160px] sm:h-[160px] border-[#c4b5fd]">
+          <div className="relative mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] pb-[0] md:pr-[24px] md:pl-[24px] pl-[0px] pr-[0px] rounded-full border-4 w-[240px] h-[240px] max-w-[auto] sm:pl-[0px] sm:pr-[0px] sm:w-[160px] sm:h-[160px] border-primary-300">
             <Image
-              className="w-[100%] h-[100%] max-w-[auto] rounded-[9999px] pt-[4px] pl-[4px] pb-[4px] pr-[4px] object-cover"
+              className="w-[100%] h-[100%] max-w-[auto] rounded-full pt-[4px] pl-[4px] pb-[4px] pr-[4px] object-cover"
               src={urlFor(pageInfo.profilePicture).url()}
               fill
               alt="profileImage"

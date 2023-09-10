@@ -7,14 +7,14 @@ type Props = {
 const StartAProject = ({ pageInfo }: Props) => {
   return (
     <div
-      className="bg-[#020202] bg-opacity-[100%] rounded-[24px] flex px-[48px] gap-[24px] xl:gap-[36px] md:gap-[24px] items-center justify-between py-[56px] mt-[-160px] xl:mx-[32px]  md:py-[36px] md:mx-[16px] md:px-[32px] xl:flex-col sm:items-center xl:justify-center xl:text-center"
+      className="bg-[#020202] bg-opacity-[100%] rounded-3xl flex px-[48px] gap-[24px] xl:gap-[36px] md:gap-[24px] items-center justify-between py-[56px] mt-[-160px] xl:mx-[32px]  md:py-[36px] md:mx-[16px] md:px-[32px] xl:flex-col sm:items-center xl:justify-center xl:text-center"
       id="Container-doit"
     >
-      <h1 className="font-bold w-[340px] text-[30px] md:text-[24px] text-[#ffffff]">
+      <h1 className="font-bold w-[340px] text-3xl md:text-2xl text-white">
         <strong className="">Start a project</strong>
       </h1>
       <div>
-        <p className="text-center text-[18px] max-w-[480px] md:text-[14px] md:max-w-[460px] sm:max-w-[260px] text-[#ffffff]">
+        <p className="text-center text-lg max-w-[480px] md:text-sm md:max-w-[460px] sm:max-w-[260px] text-white">
           {
             "Interested in working together? We should queue up a time to chat. I’ll buy the coffee."
           }
@@ -23,7 +23,7 @@ const StartAProject = ({ pageInfo }: Props) => {
       {/* right button */}
 
       <Link href={pageInfo.upworkUrl || ""} target="_blank">
-        <button className="cursor-pointer px-[32px] md:px-[24px] flex gap-[16px] py-[16px] border-[1px] rounded-[16px] w-[240px] md:py-[12px] sm:w-[180px] sm:justify-center border-green-300 hover:bg-green-300 text-white hover:text-black fill-white hover:fill-black">
+        <button className="cursor-pointer px-[32px] md:px-[24px] flex gap-[16px] py-[16px] border rounded-2xl w-[240px] md:py-[12px] sm:w-[180px] sm:justify-center border-green-300 hover:bg-green-300 text-white hover:text-black fill-white hover:fill-black">
           <svg
             width="24"
             height="24"
@@ -41,7 +41,7 @@ const StartAProject = ({ pageInfo }: Props) => {
               </clipPath>
             </defs>
           </svg>
-          <h1 className="font-bold text-[20px] md:text-[14px]">
+          <h1 className="font-bold text-xl md:text-sm">
             {"Let's do this"}
           </h1>
         </button>

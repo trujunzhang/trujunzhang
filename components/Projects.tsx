@@ -19,7 +19,7 @@ const Projects = ({ projects }: Props) => {
       className="flex justify-center items-center gap-[32px] flex-col"
       id="Container-project"
     >
-      <h1 className="text-[48px] font-bold sm:text-[24px]">
+      <h1 className="text-5xl font-bold sm:text-2xl">
         <strong className="">Featured Work</strong>
       </h1>
       <div
