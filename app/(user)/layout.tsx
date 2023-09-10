@@ -1,13 +1,13 @@
 import "../globals.css";
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+// import { Poppins } from "next/font/google";
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: "400",
-  style: "normal",
-});
-
+// const poppins = Poppins({
+//   subsets: ["latin"],
+//   weight: "400",
+//   style: "normal",
+// });
+//
 export const metadata: Metadata = {
   title: "Zhang | Designer, Frontend Developer & Mobile",
   description:
@@ -45,7 +45,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      {/* <body className={poppins.className}>{children}</body> */}
+      <body className={'font-poppins'}>{children}</body>
     </html>
   );
 }

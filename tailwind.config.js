@@ -1,4 +1,5 @@
 const colors = require("tailwindcss/colors");
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -38,6 +39,9 @@ module.exports = {
           600: colors.violet["600"],
           700: colors.violet["700"],
         },
+      },
+      fontFamily: {
+        "poppins": ["Poppins", ...defaultTheme.fontFamily.sans],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
