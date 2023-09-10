@@ -24,20 +24,16 @@ const Home = async () => {
   const skills: Skill[] = pageInfo.skills;
   const testimonial: Testimonial = pageInfo.testimonial;
 
-  // const projects: Project[] = await getProjects();
-  // const skills: Skill[] = await getSkills();
-  // const testimonial: Testimonial = await getTestimonial();
-
   return (
     <div className="">
-      <section className="pt-[32px] pb-[32px]" id="section-header">
+      <section className="py-8 md:py-6" id="section-header">
         <Wrapper className="">
           <Header pageInfo={pageInfo} />
         </Wrapper>
       </section>
 
       <section
-        className="flex flex-col items-center justify-center pb-[0px] pt-[88px] sm:pt-[32px]"
+        className="flex flex-col items-center justify-center pb-[0px] pt-14 sm:pt-8"
         id="section-hero"
       >
         <Wrapper className="">
@@ -46,7 +42,7 @@ const Home = async () => {
       </section>
 
       <section
-        className="pt-[84px] pb-[280px] xl:pb-[180px] sm:pb-[220px] sm:pt-[56px] bg-primary-600"
+        className="pt-24 pb-40 xl:pb-48 sm:pb-48 sm:pt-12 bg-primary-600"
         id="section-about"
       >
         <About pageInfo={pageInfo} />

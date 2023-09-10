@@ -16,7 +16,7 @@ const About = ({ pageInfo }: Props) => {
           <h1 className="font-bold text-3xl sm:text-xl text-white">
             {pageInfo.sayHi}
           </h1>
-          <p className="font-normal text-sm max-w-[650px] sm:text-sm text-white">
+          <p className="font-normal text-base max-w-[650px] sm:text-base text-white">
             {pageInfo.introduce}
           </p>
         </div>

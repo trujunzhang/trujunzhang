@@ -58,7 +58,7 @@ const Testimonial = ({ testimonial }: Props) => {
   return (
     <div className="px-[32px] xl:mx-[148px] lg:mx-[0px] md:px-[24px] flex flex-col items-center gap-[56px]">
       <div
-        className="max-w-[80rem]  px-[32px] md:px-[24px] flex flex-col items-center gap-[8px]"
+        className="px-[32px] md:px-[24px] flex flex-col items-center gap-6"
         id="Container-top-11-31"
       >
         <h1 className="text-5xl font-bold sm:text-2xl">
@@ -69,11 +69,11 @@ const Testimonial = ({ testimonial }: Props) => {
         </p>
       </div>
       {/* Show client on desktop */}
-      <div className="block md:hidden px-[32px] md:px-[24px]  flex flex-col items-center justify-center gap-[24px] sm:px-[12px]">
+      <div className="lg:hidden px-[32px] md:px-[24px]  flex flex-col items-center justify-center gap-[24px] sm:px-[12px]">
         {renderSlides()}
       </div>
       {/* Show client on mobile */}
-      <div className="hidden md:block flex flex-col justify-center space-y-8">
+      <div className="hidden lg:flex flex-col justify-center space-y-8">
         {testimonial.clients.map((client, index) => (
           <div key={index} className="">
             <TestimonialComponent client={client} />

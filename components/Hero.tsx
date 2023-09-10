@@ -14,7 +14,7 @@ const Hero = ({ pageInfo }: Props) => {
     <div className="max-w-[80rem] mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] pr-[32px] pb-[0] pl-[32px] md:pr-[24px] md:pl-[24px]">
       <div className="space-y-[2px] list-none block pl-[0px]">
         <li className="flex flex-col items-center justify-center gap-[128px] text-center sm:gap-[48px]">
-          <div className="p-[32px] md:p-[24px] sm:p-[16px] flex flex-col gap-[8px] justify-center items-center">
+          <div className="p-[32px] md:p-[24px] sm:p-[16px] flex flex-col gap-4 justify-center items-center">
             <span className="font-bold text-4xl sm:text-lg md:text-xl lg:text-[28px]">
               {pageInfo?.title}
             </span>
@@ -22,9 +22,9 @@ const Hero = ({ pageInfo }: Props) => {
               {pageInfo?.subTitle}
             </p>
           </div>
-          <div className="relative mt-[0] mr-[auto] mb-[0] ml-[auto] pt-[0] pb-[0] md:pr-[24px] md:pl-[24px] pl-[0px] pr-[0px] rounded-full border-4 w-[240px] h-[240px] max-w-[auto] sm:pl-[0px] sm:pr-[0px] sm:w-[160px] sm:h-[160px] border-primary-300">
+          <div className="relative md:px-[24px] rounded-full border-4 md:border-2 w-56 h-56 md:w-32 md:h-32 sm:w-24 sm:h-24 border-primary-300">
             <Image
-              className="w-[100%] h-[100%] max-w-[auto] rounded-full pt-[4px] pl-[4px] pb-[4px] pr-[4px] object-cover"
+              className="rounded-full p-1 object-cover"
               src={urlFor(pageInfo.profilePicture).url()}
               fill
               alt="profileImage"
