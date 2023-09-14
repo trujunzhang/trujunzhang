@@ -8,6 +8,7 @@ I am a versatilist and easily adapt to different hats (Full Stack Web Developer 
   
 
 <br/>
+
 ### 🧐 More About Me:
 
 - 🔭 &nbsp; I’m currently working on [upwork](https://www.upwork.com/freelancers/~014021c42b7b00bb59)
