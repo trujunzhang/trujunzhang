@@ -1,12 +1,13 @@
 ## Hey 👋, I'm Dujun zhang!👋
 
-I am a versatilist and easily adapt to different hats (Full Stack Web Developer 🌐, App Developer 📱, ML Engineer 🤖 or beginner level Designer 🎨) depending on what the project requires. I love exploring new tech stack 💻 and leveraging them to build cool stuffs 🛠️. You can also check out my portfolio here: [Portfolio](https://trujunzhang.com/)
+I am a versatilist and easily adapt to different hats (Full Stack Web Developer 🌐, App Developer 📱, ML Engineer 🤖 or beginner level Designer 🎨) depending on what the project requires. I love exploring new tech stack 💻 and leveraging them to build cool stuffs 🛠️. You can also check out my [Portfolio](https://trujunzhang.com/) here.
 <br/>
 <br/>
 
 <img align="right" alt="GIF" src="https://raw.githubusercontent.com/trujunzhang/trujunzhang/main/techstack.gif" width="360px" height="260px"/>
   
 
+<br/>
 ### 🧐 More About Me:
 
 - 🔭 &nbsp; I’m currently working on [upwork](https://www.upwork.com/freelancers/~014021c42b7b00bb59)
