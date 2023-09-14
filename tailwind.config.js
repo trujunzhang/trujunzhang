@@ -41,7 +41,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        "poppins": ["Poppins", ...defaultTheme.fontFamily.sans],
+        // "appFont": ["Poppins", ...defaultTheme.fontFamily.sans],
+        "appFont": ['Kanit', ...defaultTheme.fontFamily.sans],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

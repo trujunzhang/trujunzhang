@@ -46,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* <body className={poppins.className}>{children}</body> */}
-      <body className={'font-poppins'}>{children}</body>
+      <body className={'font-appFont'}>{children}</body>
     </html>
   );
 }

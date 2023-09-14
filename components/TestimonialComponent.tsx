@@ -9,13 +9,13 @@ type Props = {
 const TestimonialComponent = ({ client }: Props) => {
   return (
     <div
-      className="px-8 md:px-6 flex flex-col items-center justify-center gap-[96px] sm:gap-[42px]"
-      id="Container-slide-item-11-31"
+      className="px-8 md:px-2 flex flex-col items-center justify-center gap-[96px] sm:gap-[42px]"
+      id="Container-slide-item"
     >
       <div className="px-8 md:px-6 flex flex-col items-center justify-center gap-6 text-center">
         <div
           className="relative rounded-full w-[150px] h-[150px] sm:w-[100px] sm:h-[100px]"
-          id="Container-image-11-31"
+          id="Container-image"
         >
           <Image
             className=" rounded-full object-cover"
@@ -24,7 +24,7 @@ const TestimonialComponent = ({ client }: Props) => {
             alt="client's avatar"
           />
         </div>
-        <p className="max-w-xl text-lg font-normal sm:text-sm sm:max-w-[768px]">
+        <p className="max-w-xl font-normal text-lg sm:text-base sm:max-w-[768px]">
           {client.quote}
         </p>
       </div>
@@ -32,7 +32,7 @@ const TestimonialComponent = ({ client }: Props) => {
         <span className="text-xl font-bold sm:text-base">
           {client.name}
         </span>
-        <span className="text-lg font-normal sm:text-xs">
+        <span className="font-normal text-lg sm:text-xs">
           {client.role}
         </span>
       </div>

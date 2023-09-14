@@ -56,15 +56,15 @@ const Testimonial = ({ testimonial }: Props) => {
   };
 
   return (
-    <div className="px-8 xl:mx-[148px] lg:mx-[0px] md:px-6 flex flex-col items-center gap-[56px]">
+    <div className="xl:mx-[148px] lg:mx-[0px] px-8 md:px-2 flex flex-col items-center gap-[56px]">
       <div
-        className="px-8 md:px-6 flex flex-col items-center gap-6"
-        id="Container-top-11-31"
+        className="px-8 md:px-2 flex flex-col items-center gap-6"
+        id="Container-top"
       >
         <h1 className="text-5xl font-bold sm:text-2xl">
           {testimonial.title}
         </h1>
-        <p className="text-center text-lg max-w-[640px] sm:max-w-[300px] sm:text-sm">
+        <p className="text-center max-w-[640px] sm:max-w-[300px] font-medium text-xl sm:text-base">
           {testimonial.description}
         </p>
       </div>

@@ -27,10 +27,9 @@ const SkillComponent = ({ skill, index }: Props) => {
   };
 
   return (
-    // todo:djzhang
     <div
-      className="space-y-[2px] flex flex-col items-center justify-center text-center p-16 p-3 gap-[32px] xl:p-[18px] md:p-12"
-      id="skill-column-6-17"
+      className="flex flex-col items-center text-center gap-8 py-24 xl:py-16 md:py-12"
+      id="skill-column"
     >
       <div className="relative md:p-6 rounded-full w-[120px] h-[120px] bg-emerald-500">
         <Image
@@ -42,7 +41,7 @@ const SkillComponent = ({ skill, index }: Props) => {
       </div>
       <div className="max-w-[80rem] mx-[auto] pl-8 md:px-6 flex flex-col gap-[12px]">
         <h1 className="text-xl font-semibold"> {skill.name}</h1>
-        <p className="min-h-[74px] text-sm font-normal max-w-[400px]">
+        <p className="min-h-[74px] text-sm font-normal max-w-[360px]">
           {skill.description}
         </p>
       </div>

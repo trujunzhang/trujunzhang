@@ -16,10 +16,10 @@ const Hero = ({ pageInfo }: Props) => {
         <div className="flex flex-col items-center justify-center text-center gap-24 xl:gap-12 md:gap-8">
           {/* Top Container */}
           <div className="p-8 md:p-6 sm:p-4 flex flex-col gap-4 justify-center items-center">
-            <span className="font-bold text-4xl sm:text-lg md:text-xl lg:text-3xl">
+            <span className="font-bold text-6xl sm:text-lg md:text-xl lg:text-4xl">
               {pageInfo?.title}
             </span>
-            <p className="text-xl font-normal sm:text-sm sm:max-w-[240px]">
+            <p className="font-normal text-3xl sm:text-base sm:max-w-[280px] text-gray-800">
               {pageInfo?.subTitle}
             </p>
           </div>

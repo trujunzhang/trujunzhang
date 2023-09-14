@@ -42,7 +42,7 @@ const Home = async () => {
       </section>
 
       <section
-        className="pt-24 pb-40 xl:pb-48 sm:pb-48 sm:pt-12 bg-primary-600"
+        className="pt-24 pb-56 xl:pb-56 sm:pb-56 sm:pt-16 bg-primary-600"
         id="section-about"
       >
         <About pageInfo={pageInfo} />
@@ -53,7 +53,7 @@ const Home = async () => {
       </section>
 
       <section
-        className="py-20 mx-[auto] sm:pb-[30px]"
+        className="py-20 mx-[auto] sm:pb-2"
         id="section-project"
       >
         <Wrapper className="">

@@ -24,7 +24,7 @@ const Header = ({ pageInfo }: Props) => {
         </Link>
         <Link href={pageInfo.upworkUrl || ""} target="_blank">
           <button
-            className="text-sm rounded-3xl border-2 px-8 py-2 md:px-4 md:py-1 border-primary-600 hover:bg-primary-600"
+            className="rounded-3xl border-2 px-8 py-2 md:px-4 md:py-1 border-primary-600 hover:bg-primary-600"
             type="button"
           >
             <span className="font-normal text-lg text-primary-600 hover:text-white">

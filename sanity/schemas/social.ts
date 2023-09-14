@@ -19,8 +19,8 @@ export default defineType({
     }),
     defineField({
       name: "url",
-      title: "Url",
-      type: "url",
+      title: "href",
+      type: "string",
     }),
     defineField({
       name: "icon",
