@@ -1,10 +1,10 @@
-## Hey 👋, I'm Dujun zhang!👋
+## Hey 👋, I'm dujun zhang!👋
 
 I am a versatilist and easily adapt to different hats (Full Stack Web Developer 🌐, App Developer 📱, ML Engineer 🤖 or beginner level Designer 🎨) depending on what the project requires. I love exploring new tech stack 💻 and leveraging them to build cool stuffs 🛠️. You can also check out my [Portfolio](https://trujunzhang.com/) here.
 <br/>
 <br/>
 
-<img align="right" alt="GIF" src="https://raw.githubusercontent.com/trujunzhang/trujunzhang/main/techstack.gif" width="360px" height="260px"/>
+<img align="right" alt="GIF" src="https://raw.githubusercontent.com/trujunzhang/trujunzhang/main/techstack.gif" width="360px" height="220px"/>
   
 
 <br>
