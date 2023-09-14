@@ -10,7 +10,7 @@ type Props = {
 
 const Skills = ({ skills }: Props) => {
   return (
-    <div className="md:p-[24px] grid grid-cols-3 shadow-lg rounded-3xl m-[96px]  xl:m-[32px] md:grid-cols-1 sm:m-[14px] sm:p-[4px] bg-white">
+    <div className="md:p-6 grid grid-cols-3 shadow-lg rounded-3xl m-24 xl:m-8 md:grid-cols-1 sm:m-3.5 sm:p-1 bg-white">
       {skills.map((skill: Skill, index: number) => (
         <SkillComponent key={skill._id} skill={skill} index={index} />
       ))}

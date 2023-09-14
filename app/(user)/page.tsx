@@ -53,7 +53,7 @@ const Home = async () => {
       </section>
 
       <section
-        className="pb-[80px] pt-[80px] mx-[auto] sm:pb-[30px]"
+        className="py-20 mx-[auto] sm:pb-[30px]"
         id="section-project"
       >
         <Wrapper className="">
@@ -61,12 +61,12 @@ const Home = async () => {
         </Wrapper>
       </section>
 
-      <section className="py-[80px] mb-[120px]" id="section-Testimonials">
+      <section className="py-20 mb-[120px]" id="section-Testimonials">
         <Testimonial testimonial={testimonial} />
       </section>
 
       <section
-        className="pb-[60px] pt-[80px] mx-[auto] bg-primary-600"
+        className="pb-[60px] pt-20 mx-[auto] bg-primary-600"
         id="Section-doit"
       >
         <Wrapper className="">
@@ -74,7 +74,7 @@ const Home = async () => {
         </Wrapper>
       </section>
 
-      <section className="pt-[40px] pb-[40px] bg-primary-600" id="Section-footer">
+      <section className="py-10 bg-primary-600" id="Section-footer">
         <Footer pageInfo={pageInfo} />
       </section>
     </div>

@@ -1,15 +1,16 @@
 ## Hey 👋, I'm Dujun zhang!👋
 
-I am a versatilist and easily adapt to different hats (Full Stack Web Developer 🌐, App Developer 📱, ML Engineer 🤖 or beginner level Designer 🎨) depending on what the project requires. I love exploring new tech stack 💻 and leveraging them to build cool stuffs 🛠️. 
+I am a versatilist and easily adapt to different hats (Full Stack Web Developer 🌐, App Developer 📱, ML Engineer 🤖 or beginner level Designer 🎨) depending on what the project requires. I love exploring new tech stack 💻 and leveraging them to build cool stuffs 🛠️. You can also check out my portfolio here: [Portfolio](https://trujunzhang.com/)
 <br/>
 <br/>
 
 <img align="right" alt="GIF" src="https://raw.githubusercontent.com/trujunzhang/trujunzhang/main/techstack.gif" width="360px" height="260px"/>
   
+
 ### 🧐 More About Me:
 
 - 🔭 &nbsp; I’m currently working on [upwork](https://www.upwork.com/freelancers/~014021c42b7b00bb59)
-- 🤝 &nbsp; I’m looking to collaborate on [react-firebase-pagination-hooks](https://github.com/trujunzhang/react-firebase-pagination-hooks)
+- 🤝 &nbsp; I’m looking to collaborate on [eslint-plugin-ycode-tailwindcss](https://github.com/trujunzhang/eslint-plugin-ycode-tailwindcss)
 - 🌱 &nbsp; I’m currently learning Typescript; 
 - 👨🏻‍💻 &nbsp; Most of my projects are available on [Github](https://github.com/trujunzhang?tab=repositories)
 - 🎨 &nbsp; Using [this svg](https://storyset.com/illustration/javascript-frameworks/amico) and Figma I made 👉

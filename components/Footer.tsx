@@ -16,7 +16,7 @@ const Footer = ({ pageInfo }: Props) => {
           <Link key={social._id} href={social?.url || ""} target="_blank">
             <button className="relative rounded-full border-2 border-primary-300 w-[48px] h-[48px] sm:w-[40px] sm:h-[40px]">
               <Image
-                className="object-fit p-[12px] sm:p-[8px]"
+                className="object-fit p-3 sm:p-2"
                 src={urlFor(social?.icon).url()}
                 fill
                 alt={social?.title}
@@ -30,7 +30,7 @@ const Footer = ({ pageInfo }: Props) => {
 
   return (
     <div
-      className="px-[32px] md:px-[24px] flex flex-col items-center justify-center gap-[48px]"
+      className="px-8 md:px-6 flex flex-col items-center justify-center gap-[48px]"
       id="Container-footer-5-13"
     >
       <div

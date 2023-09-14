@@ -9,10 +9,10 @@ type Props = {
 const TestimonialComponent = ({ client }: Props) => {
   return (
     <div
-      className="px-[32px] md:px-[24px] flex flex-col items-center justify-center gap-[96px] sm:gap-[42px]"
+      className="px-8 md:px-6 flex flex-col items-center justify-center gap-[96px] sm:gap-[42px]"
       id="Container-slide-item-11-31"
     >
-      <div className="px-[32px] md:px-[24px] flex flex-col items-center justify-center gap-6 text-center">
+      <div className="px-8 md:px-6 flex flex-col items-center justify-center gap-6 text-center">
         <div
           className="relative rounded-full w-[150px] h-[150px] sm:w-[100px] sm:h-[100px]"
           id="Container-image-11-31"
@@ -28,7 +28,7 @@ const TestimonialComponent = ({ client }: Props) => {
           {client.quote}
         </p>
       </div>
-      <div className="px-[32px] md:px-[24px] flex items-center justify-center flex-col gap-[8px]">
+      <div className="px-8 md:px-6 flex items-center justify-center flex-col gap-[8px]">
         <span className="text-xl font-bold sm:text-base">
           {client.name}
         </span>
