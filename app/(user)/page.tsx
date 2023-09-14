@@ -33,7 +33,7 @@ const Home = async () => {
       </section>
 
       <section
-        className="flex flex-col items-center justify-center pt-14 sm:pt-8"
+        className="flex flex-col items-center justify-center pt-20 sm:pt-16"
         id="section-hero"
       >
         <Wrapper className="">
