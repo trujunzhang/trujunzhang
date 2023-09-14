@@ -40,19 +40,17 @@ const Header = ({ pageInfo }: Props) => {
     <div className="flex flex-col">
       {/* Top header bar */}
       <div
-        className="md:px-6 flex justify-between items-center px-[0px] lg:px-6 sm:px-[18px] xl:px-[38px]"
-        id="Container-header-5-13"
+        className="flex justify-between items-center px-[0px] 2xl:px-12 lg:px-6 md:px-6 sm:px-4"
+        id="Container-header"
       >
         {/* LOGO */}
-        <div id="Block-logo-5-13" className="w-[56px] sm:w-[40px] h-[40px]">
-          <Image
-            className=""
-            src={urlFor(pageInfo.logo).url()}
-            width={54}
-            height={70}
-            alt="logo"
-          />
-        </div>
+        <Image
+          className=""
+          src={urlFor(pageInfo.logo).url()}
+          width={54}
+          height={70}
+          alt="logo"
+        />
 
         {/* MOBILE MENU */}
         <div className="hidden xl:flex">
