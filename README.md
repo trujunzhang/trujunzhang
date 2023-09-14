@@ -7,8 +7,7 @@ I am a versatilist and easily adapt to different hats (Full Stack Web Developer 
 <img align="right" alt="GIF" src="https://raw.githubusercontent.com/trujunzhang/trujunzhang/main/techstack.gif" width="360px" height="260px"/>
   
 
-<br/>
-<br/>
+<br>
 
 ### 🧐 More About Me:
 
