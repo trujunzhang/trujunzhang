@@ -3,11 +3,17 @@ import Image from "next/image";
 import urlFor from "@/lib/urlFor";
 import Link from "next/link";
 
+import { yearToEnglishWords } from "@/lib/year_utils";
+
 type Props = {
   pageInfo: PageInfo;
 };
 const Footer = ({ pageInfo }: Props) => {
   const socials: Social[] = pageInfo.socials;
+
+  const d = new Date();
+  let year = d.getFullYear();
+  const yearEnglishWord = yearToEnglishWords(year);
 
   const SocialIcons = () => {
     return (
@@ -45,7 +51,7 @@ const Footer = ({ pageInfo }: Props) => {
             alt="logo"
           />
         </div>
-        <h1 className="text-center text-xl max-w-[360px] font-normal sm:text-sm sm:max-w-[260px] text-primary-300">
+        <h1 className="text-center max-w-[360px] font-normal text-xl sm:text-base sm:max-w-[260px] text-primary-300">
           {pageInfo.footerTitle}
         </h1>
       </div>
@@ -55,14 +61,14 @@ const Footer = ({ pageInfo }: Props) => {
 
       <div
         className="flex flex-col gap-[8px] justify-center items-center"
-        id="Block-bottom-5-13"
+        id="Block-bottom"
       >
         {/* CopyRight © 2023 */}
         <div
           className="flex items-center justify-center gap-[8px]"
-          id="Block-copyright-5-13"
+          id="Block-copyright"
         >
-          <h1 className="text-sm font-normal text-primary-300">
+          <h1 className="text-base font-normal text-primary-300">
             Handcrafted by me{" "}
           </h1>
 
@@ -82,15 +88,15 @@ const Footer = ({ pageInfo }: Props) => {
               <path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM199.4 312.6c-31.2-31.2-31.2-81.9 0-113.1s81.9-31.2 113.1 0c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9c-50-50-131-50-181 0s-50 131 0 181s131 50 181 0c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0c-31.2 31.2-81.9 31.2-113.1 0z"></path>
             </svg>
           </span>
-          <h1 className="text-sm font-normal text-primary-300">
-            twentytwentythree
+          <h1 className="text-base font-normal text-primary-300">
+            {yearEnglishWord}
           </h1>
         </div>
         <div
           className="flex gap-[8px] justify-center items-center"
           id="Block-madewith-5-13"
         >
-          <h1 className="text-sm font-medium text-primary-300">made with</h1>
+          <h1 className="text-base font-medium text-primary-300">made with</h1>
 
           <div className="relative w-[80px] h-[40px]">
             <Image

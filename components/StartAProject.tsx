@@ -14,7 +14,7 @@ const StartAProject = ({ pageInfo }: Props) => {
         <strong className="">Start a project</strong>
       </h1>
       <div>
-        <p className="text-center text-lg max-w-[480px] md:text-sm md:max-w-[460px] sm:max-w-[260px] text-white">
+        <p className="text-center  max-w-[480px] text-lg lg:text-xl md:text-base md:max-w-[460px] sm:max-w-[260px] text-white">
           {
             "Interested in working together? We should queue up a time to chat. I’ll buy the coffee."
           }
@@ -41,7 +41,7 @@ const StartAProject = ({ pageInfo }: Props) => {
               </clipPath>
             </defs>
           </svg>
-          <h1 className="font-bold text-xl md:text-sm">
+          <h1 className="font-bold text-xl md:text-base">
             {"Let's do this"}
           </h1>
         </button>
