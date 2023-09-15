@@ -14,8 +14,8 @@ const Hero = ({ pageInfo }: Props) => {
     <div className="px-8 lg:px-2">
       <div className="flex flex-col items-center justify-center text-center gap-24 xl:gap-16 md:gap-12">
         {/* Top Container */}
-        <div className="flex flex-col gap-4 justify-center items-center">
-          <span className="font-bold text-6xl lg:text-4xl md:text-3xl">
+        <div className="flex flex-col gap-6 justify-center items-center">
+          <span className="hero__title">
             {pageInfo?.title}
           </span>
           <p className="font-normal text-3xl lg:text-2xl md:text-xl sm:max-w-[340px] text-gray-800">
