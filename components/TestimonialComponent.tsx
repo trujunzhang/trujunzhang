@@ -9,7 +9,7 @@ type Props = {
 const TestimonialComponent = ({ client }: Props) => {
   return (
     <div
-      className="px-8 md:px-2 flex flex-col items-center justify-center gap-[96px] sm:gap-[42px]"
+      className="px-8 md:px-2 flex flex-col items-center justify-center gap-24 sm:gap-[42px]"
       id="Container-slide-item"
     >
       <div className="px-8 md:px-6 flex flex-col items-center justify-center gap-6 text-center">
@@ -28,7 +28,7 @@ const TestimonialComponent = ({ client }: Props) => {
           {client.quote}
         </p>
       </div>
-      <div className="px-8 md:px-6 flex items-center justify-center flex-col gap-[8px]">
+      <div className="px-8 md:px-6 flex items-center justify-center flex-col gap-2">
         <span className="text-xl font-bold sm:text-base">
           {client.name}
         </span>

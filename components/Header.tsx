@@ -14,7 +14,7 @@ const Header = ({ pageInfo }: Props) => {
   const [open, setOpen] = useState(false);
   const rightMenu = () => {
     return (
-      <div className="md:px-6 gap-[24px] items-center sm:gap-[12px] flex flex-row xl:flex-col">
+      <div className="md:px-6 gap-6 items-center sm:gap-3 flex flex-row xl:flex-col">
         <Link
           href={pageInfo.githubUrl || ""}
           target="_blank"
@@ -40,7 +40,7 @@ const Header = ({ pageInfo }: Props) => {
     <div className="flex flex-col">
       {/* Top header bar */}
       <div
-        className="flex justify-between items-center px-[0px] 2xl:px-12 lg:px-6 md:px-6 sm:px-4"
+        className="flex justify-between items-center px-0 2xl:px-12 lg:px-6 md:px-6 sm:px-4"
         id="Container-header"
       >
         {/* LOGO */}

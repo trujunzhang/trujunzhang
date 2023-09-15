@@ -41,7 +41,7 @@
     "@types/jest": "^29.5.4",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
-    "eslint-plugin-ycode-tailwindcss": "^1.0.6",
+    "eslint-plugin-ycode-tailwindcss": "^1.0.7",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "tailwind-scrollbar": "^3.0.5"

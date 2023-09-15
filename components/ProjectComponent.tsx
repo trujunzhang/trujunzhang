@@ -41,7 +41,7 @@ const ProjectComponent = ({ project }: Props) => {
           )}
 
         <div
-          className="flex-1 pb-[0] px-8 md:px-6 flex flex-col items-center justify-center gap-[12px] sm:px-2"
+          className="flex-1 pb-[0] px-8 md:px-6 flex flex-col items-center justify-center gap-3 sm:px-2"
           id="Container-right-7-24"
         >
           <h1 className="font-bold text-3xl md:text-xl md:text-center text-white">

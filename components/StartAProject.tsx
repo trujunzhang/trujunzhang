@@ -7,7 +7,7 @@ type Props = {
 const StartAProject = ({ pageInfo }: Props) => {
   return (
     <div
-      className="bg-[#020202] bg-opacity-[100%] rounded-3xl flex px-12 gap-[24px] xl:gap-[36px] md:gap-[24px] items-center justify-between py-14 mt-[-160px] xl:mx-8 md:py-9 md:mx-4 md:px-8 xl:flex-col sm:items-center xl:justify-center xl:text-center"
+      className="bg-[#020202] bg-opacity-[100%] rounded-3xl flex px-12 gap-6 xl:gap-9 md:gap-6 items-center justify-between py-14 mt-[-160px] xl:mx-8 md:py-9 md:mx-4 md:px-8 xl:flex-col sm:items-center xl:justify-center xl:text-center"
       id="Container-doit"
     >
       <h1 className="font-bold w-[340px] text-3xl md:text-2xl text-white">
@@ -23,7 +23,7 @@ const StartAProject = ({ pageInfo }: Props) => {
       {/* right button */}
 
       <Link href={pageInfo.upworkUrl || ""} target="_blank">
-        <button className="cursor-pointer px-8 md:px-6 flex gap-[16px] py-4 border rounded-2xl w-[240px] md:py-3 sm:w-[180px] sm:justify-center border-green-300 hover:bg-green-300 text-white hover:text-black fill-white hover:fill-black">
+        <button className="cursor-pointer px-8 md:px-6 flex gap-4 py-4 border rounded-2xl w-60 md:py-3 sm:w-[180px] sm:justify-center border-green-300 hover:bg-green-300 text-white hover:text-black fill-white hover:fill-black">
           <svg
             width="24"
             height="24"

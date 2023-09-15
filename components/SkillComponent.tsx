@@ -39,19 +39,19 @@ const SkillComponent = ({ skill, index }: Props) => {
           fill
         />
       </div>
-      <div className="max-w-[80rem] mx-[auto] pl-8 md:px-6 flex flex-col gap-[12px]">
+      <div className="max-w-[80rem] mx-[auto] pl-8 md:px-6 flex flex-col gap-3">
         <h1 className="text-xl font-semibold"> {skill.name}</h1>
         <p className="min-h-[74px] text-base font-normal max-w-[360px]">
           {skill.description}
         </p>
       </div>
-      <div className="max-w-[80rem] mx-[auto] px-8 md:px-6 flex flex-col gap-[12px]">
+      <div className="max-w-[80rem] mx-[auto] px-8 md:px-6 flex flex-col gap-3">
         <h1 className="font-medium text-lg sm:text-lg text-primary-600">
           {skill.title}
         </h1>
         <p className="font-normal text-lg">{skill.subTitle}</p>
       </div>
-      <div className="max-w-[80rem] mx-[auto] px-8 md:px-6 flex flex-col gap-[12px]">
+      <div className="max-w-[80rem] mx-[auto] px-8 md:px-6 flex flex-col gap-3">
         <h1 className="font-semibold text-lg text-primary-600">
           {skill.skillTitle}
         </h1>

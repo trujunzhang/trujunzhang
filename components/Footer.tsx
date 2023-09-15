@@ -20,7 +20,7 @@ const Footer = ({ pageInfo }: Props) => {
       <div className="flex space-x-10 md:space-x-3">
         {socials.map((social) => (
           <Link key={social._id} href={social?.url || ""} target="_blank">
-            <button className="relative rounded-full border-2 border-primary-300 w-[48px] h-[48px] sm:w-[40px] sm:h-[40px]">
+            <button className="relative rounded-full border-2 border-primary-300 w-12 h-12 sm:w-10 sm:h-10">
               <Image
                 className="object-fit p-3 sm:p-2"
                 src={urlFor(social?.icon).url()}
@@ -36,14 +36,14 @@ const Footer = ({ pageInfo }: Props) => {
 
   return (
     <div
-      className="px-8 md:px-6 flex flex-col items-center justify-center gap-[48px]"
+      className="px-8 md:px-6 flex flex-col items-center justify-center gap-12"
       id="Container-footer-5-13"
     >
       <div
-        className="flex items-center flex-col gap-[12px]"
+        className="flex items-center flex-col gap-3"
         id="Block-top-5-13"
       >
-        <div className="relative w-[56px] h-[60px]">
+        <div className="relative w-14 h-[60px]">
           <Image
             className="object-fill"
             src={urlFor(pageInfo.logoFooter).url()}
@@ -60,12 +60,12 @@ const Footer = ({ pageInfo }: Props) => {
       {socials && <SocialIcons />}
 
       <div
-        className="flex flex-col gap-[8px] justify-center items-center"
+        className="flex flex-col gap-2 justify-center items-center"
         id="Block-bottom"
       >
         {/* CopyRight © 2023 */}
         <div
-          className="flex items-center justify-center gap-[8px]"
+          className="flex items-center justify-center gap-2"
           id="Block-copyright"
         >
           <h1 className="text-base font-normal text-primary-300">
@@ -93,12 +93,12 @@ const Footer = ({ pageInfo }: Props) => {
           </h1>
         </div>
         <div
-          className="flex gap-[8px] justify-center items-center"
+          className="flex gap-2 justify-center items-center"
           id="Block-madewith-5-13"
         >
           <h1 className="text-base font-medium text-primary-300">made with</h1>
 
-          <div className="relative w-[80px] h-[40px]">
+          <div className="relative w-20 h-10">
             <Image
               className="object-fill"
               src={urlFor(pageInfo.madeIcon).url()}

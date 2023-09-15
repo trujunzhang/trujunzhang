@@ -23,7 +23,7 @@ const Testimonial = ({ testimonial }: Props) => {
           if (isSelected) {
             return (
               <li
-                className="inline-block w-[16px] h-[16px] rounded-full bg-primary-600 mx-1"
+                className="inline-block w-4 h-4 rounded-full bg-primary-600 mx-1"
                 id="Container-active-11-31"
                 aria-label={`Selected: ${label} ${index + 1}`}
                 title={`Selected: ${label} ${index + 1}`}
@@ -32,7 +32,7 @@ const Testimonial = ({ testimonial }: Props) => {
           }
           return (
             <li
-              className="inline-block w-[16px] h-[16px] rounded-full border-2 border-gray-300 mx-1"
+              className="inline-block w-4 h-4 rounded-full border-2 border-gray-300 mx-1"
               id="Container-deactive-11-31"
               onClick={onClickHandler}
               onKeyDown={onClickHandler}
@@ -56,7 +56,7 @@ const Testimonial = ({ testimonial }: Props) => {
   };
 
   return (
-    <div className="xl:mx-[148px] lg:mx-[0px] px-8 md:px-2 flex flex-col items-center gap-[56px]">
+    <div className="xl:mx-[148px] lg:mx-0 px-8 md:px-2 flex flex-col items-center gap-14">
       <div
         className="px-8 md:px-2 flex flex-col items-center gap-6"
         id="Container-top"
@@ -69,7 +69,7 @@ const Testimonial = ({ testimonial }: Props) => {
         </p>
       </div>
       {/* Show client on desktop */}
-      <div className="lg:hidden px-8 md:px-6 flex flex-col items-center justify-center gap-[24px] sm:px-3">
+      <div className="lg:hidden px-8 md:px-6 flex flex-col items-center justify-center gap-6 sm:px-3">
         {renderSlides()}
       </div>
       {/* Show client on mobile */}

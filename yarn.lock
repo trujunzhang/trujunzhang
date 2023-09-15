@@ -4335,10 +4335,10 @@ eslint-plugin-react@^7.31.7:
     semver "^6.3.1"
     string.prototype.matchall "^4.0.8"
 
-eslint-plugin-ycode-tailwindcss@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-ycode-tailwindcss/-/eslint-plugin-ycode-tailwindcss-1.0.6.tgz#2126825dd8c21c12eae0c4b576ef612737e8cc0a"
-  integrity sha512-7nYgzmwUMh6JIFJnjPVEUjNfQOTAuEMivnsXcjyFJ8qDcldHjQLgs04NQ5lMHsvutdiLs2RTSXnZxVlJHKCbNw==
+eslint-plugin-ycode-tailwindcss@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-ycode-tailwindcss/-/eslint-plugin-ycode-tailwindcss-1.0.7.tgz#6970dbe95f8bf0a9b5a1c6a6703a89a4933df40d"
+  integrity sha512-tG+ricBvR1Nht4mVksPd5juoVdXW9oDa0slFP4B1ZzS3rr6KARteULVqhL1UA4FVbGlfb2204X/ufSJxv/WpBg==
 
 eslint-scope@^7.2.2:
   version "7.2.2"
