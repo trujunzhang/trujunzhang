@@ -1,4 +1,5 @@
 import React from "react";
+import type { InferGetServerSidePropsType, GetServerSideProps } from "next";
 
 import About from "@/components/About";
 import Header from "@/components/Header";
@@ -9,17 +10,18 @@ import Testimonial from "@/components/Testimonial";
 import StartAProject from "@/components/StartAProject";
 import Footer from "@/components/Footer";
 import Wrapper from "@/components/common/Wrapper";
-import {
-  getExperience,
-  getPageInfo,
-  getProjects,
-  getSkills,
-  getTestimonial,
-} from "@/lib/utils";
+import { getPageInfo } from "@/lib/utils";
 
-const Home = async () => {
+export const getServerSideProps = (async (context) => {
   const pageInfo: PageInfo = await getPageInfo();
+  return { props: { pageInfo } };
+}) satisfies GetServerSideProps<{
+  pageInfo: PageInfo;
+}>;
 
+const Home = ({
+  pageInfo,
+}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   const projects: Project[] = pageInfo.projects;
   const skills: Skill[] = pageInfo.skills;
   const testimonial: Testimonial = pageInfo.testimonial;
@@ -52,10 +54,7 @@ const Home = async () => {
         <Skills skills={skills} />
       </section>
 
-      <section
-        className="py-20 mx-[auto] sm:pb-2"
-        id="section-project"
-      >
+      <section className="py-20 mx-[auto] sm:pb-2" id="section-project">
         <Wrapper className="">
           <Projects projects={projects} />
         </Wrapper>

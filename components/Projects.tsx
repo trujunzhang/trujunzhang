@@ -1,11 +1,7 @@
 "use client";
 
-import urlFor from "@/lib/urlFor";
-import {
-  ArrowTopRightOnSquareIcon,
-  CodeBracketIcon,
-} from "@heroicons/react/20/solid";
-import Link from "next/link";
+
+
 import React from "react";
 import ProjectComponent from "./ProjectComponent";
 

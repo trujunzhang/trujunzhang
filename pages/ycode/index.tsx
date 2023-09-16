@@ -1,5 +1,4 @@
-import React from 'react'
-
+import React from "react";
 
 import {
   About,
@@ -9,12 +8,12 @@ import {
   Hero,
   Project,
   Skill,
-  Testimonial
-} from '@/ycode'
+  Testimonial,
+} from "@/ycode";
 
 const Ycode = () => {
   return (
-  <div>
+    <div>
       <Header />
       <Hero />
       <About />
@@ -24,7 +23,7 @@ const Ycode = () => {
       <Doit />
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Ycode
+export default Ycode;

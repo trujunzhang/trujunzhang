@@ -44,13 +44,15 @@ const Header = ({ pageInfo }: Props) => {
         id="Container-header"
       >
         {/* LOGO */}
-        <Image
-          className=""
-          src={urlFor(pageInfo.logo).url()}
-          width={54}
-          height={70}
-          alt="logo"
-        />
+        <Link href="/">
+          <Image
+            className=""
+            src={urlFor(pageInfo.logo).url()}
+            width={54}
+            height={70}
+            alt="logo"
+          />
+        </Link>
 
         {/* MOBILE MENU */}
         <div className="hidden xl:flex">
