@@ -1,7 +1,5 @@
-"use client";
-
-import type {Metadata} from 'next';
-import {metadata as studioMetadata} from 'next-sanity/studio/metadata';
+// import type {Metadata} from 'next';
+// import {metadata as studioMetadata} from 'next-sanity/studio/metadata';
 
 import { Inter } from "next/font/google";
 
@@ -12,11 +10,12 @@ const inter = Inter({ subsets: ["latin"] });
 //   description: "Zhang's portfolio CMS",
 // };
 
-export const metadata: Metadata = {
-  ...studioMetadata,
-  // Overrides the viewport to resize behavior
-  viewport: `${studioMetadata.viewport}, interactive-widget=resizes-content`,
-}
+// export const metadata: Metadata = {
+//   ...studioMetadata,
+//   // Overrides the viewport to resize behavior
+//   viewport: `${studioMetadata.viewport}, interactive-widget=resizes-content`,
+// }
+
 export default function RootLayout({
   children,
 }: {
