@@ -1,3 +1,5 @@
+"use client";
+
 import type {Metadata} from 'next';
 import {metadata as studioMetadata} from 'next-sanity/studio/metadata';
 
