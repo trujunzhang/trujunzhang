@@ -1,7 +1,7 @@
 import type {Metadata} from 'next';
 import {metadata as studioMetadata} from 'next-sanity/studio/metadata';
 
-import { Studio } from "./Studio";
+import { Studio } from '@/components/sanity/Studio';
 
 export const metadata: Metadata = {
   ...studioMetadata,
