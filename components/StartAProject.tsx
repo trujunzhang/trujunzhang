@@ -7,7 +7,7 @@ type Props = {
 const StartAProject = ({ pageInfo }: Props) => {
   return (
     <div
-      className="bg-[#020202] bg-opacity-[100%] rounded-3xl flex px-12 gap-6 xl:gap-9 md:gap-6 items-center justify-between py-14 mt-[-160px] xl:mx-8 md:py-9 md:mx-4 md:px-8 xl:flex-col sm:items-center xl:justify-center xl:text-center"
+      className="bg-[#020202] bg-opacity-[100%] rounded-3xl flex px-12 gap-6 xl:gap-9 md:gap-6 items-center justify-between py-14 mt-[-160px] 2xl:mx-8 md:py-9 md:mx-4 md:px-8 xl:flex-col sm:items-center xl:justify-center xl:text-center"
       id="Container-doit"
     >
       <h1 className="font-bold w-[340px] text-3xl md:text-2xl text-white">

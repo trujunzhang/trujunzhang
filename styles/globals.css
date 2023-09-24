@@ -8,7 +8,7 @@
 @layer components {
   .hero__title {
     /* @apply 2xl:text-[72px] sm:text-[64px] text-[50px] font-extrabold; */
-    @apply font-bold text-6xl lg:text-[46px] md:text-3xl; 
+    @apply font-bold text-6xl 2xl:text-5xl lg:text-[46px] md:text-3xl; 
   }
 
   .hero__subtitle {

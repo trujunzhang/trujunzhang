@@ -17,7 +17,7 @@ const Hero = ({ pageInfo }: Props) => {
           <span className="hero__title">
             {pageInfo?.title}
           </span>
-          <p className="font-normal text-3xl lg:text-2xl md:text-xl sm:max-w-[340px] text-gray-800">
+          <p className="font-normal text-3xl lg:text-2xl md:text-xl sm:max-w-[340px] text-gray-600">
             {pageInfo?.subTitle}
           </p>
         </div>
