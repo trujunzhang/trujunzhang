@@ -64,7 +64,7 @@ const Testimonial = ({ testimonial }: Props) => {
         <h1 className="text-5xl font-bold sm:text-2xl">
           {testimonial.title}
         </h1>
-        <p className="text-center max-w-[640px] sm:max-w-[300px] font-medium text-xl sm:text-base">
+        <p className="text-center max-w-[640px] sm:max-w-[300px] font-medium text-xl sm:text-base text-gray-600">
           {testimonial.description}
         </p>
       </div>

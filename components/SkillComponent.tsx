@@ -40,7 +40,7 @@ const SkillComponent = ({ skill, index }: Props) => {
         />
       </div>
       <div className="max-w-[80rem] mx-[auto] pl-8 md:px-6 flex flex-col gap-3">
-        <h1 className="text-xl font-bold"> {skill.name}</h1>
+        <h1 className="text-2xl font-bold"> {skill.name}</h1>
         <p className="min-h-[74px] text-base font-normal max-w-[360px] 2xl:max-w-[300px]">
           {skill.description}
         </p>

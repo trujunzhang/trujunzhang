@@ -24,7 +24,7 @@ const TestimonialComponent = ({ client }: Props) => {
             alt="client's avatar"
           />
         </div>
-        <p className="max-w-xl font-normal text-lg sm:text-base sm:max-w-[768px]">
+        <p className="max-w-xl font-normal text-lg sm:text-base sm:max-w-[768px] text-gray-600">
           {client.quote}
         </p>
       </div>
