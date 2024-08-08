@@ -7,6 +7,7 @@ type Props = {
 }
 
 const ExperienceCard = ({ experience }: Props) => {
+  const companyImage: any= experience.companyImage as any;
   return (
     <div className='flex flex-col rounded-lg items-center space-y-7 bg-[#292929] p-10 flex-shrink-0 w-[400px] md:w-[800px] snap-center md:opacity-70 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden'>
       <motion.img
@@ -15,7 +16,7 @@ const ExperienceCard = ({ experience }: Props) => {
         transition={{ duration: 1.2 }}
         viewport={{ once: true }}
         className='w-20 h-20 md:w-24 md:h-24 rounded-full object-cover object-center'
-        src={urlFor(experience?.companyImage!).url()}
+        src={urlFor(companyImage).url()}
         alt="companyLogo"
       />
 
