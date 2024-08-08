@@ -1,4 +1,4 @@
-
+import React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -31,9 +31,6 @@ export const metadata: Metadata = {
   },
 };
 
-
-
-import React from "react";
 import type { InferGetServerSidePropsType, GetServerSideProps } from "next";
 
 import About from "@/components/About";

@@ -1,14 +1,31 @@
-import type {Metadata} from 'next';
-import {metadata as studioMetadata} from 'next-sanity/studio/metadata';
+import React from "react";
+import { NextStudio } from "next-sanity/studio";
 
-import { Studio } from '@/components/sanity/Studio';
+import type { Metadata, Viewport } from "next";
+import config from "../../sanity.config";
 
+import {
+  metadata as studioMetadata,
+  viewport as studioViewport,
+} from "next-sanity/studio";
+
+// Set the correct `viewport`, `robots` and `referrer` meta tags
 export const metadata: Metadata = {
   ...studioMetadata,
-  // Overrides the viewport to resize behavior
-  viewport: `${studioMetadata.viewport}, interactive-widget=resizes-content`,
-}
+  // Overrides the title until the Studio is loaded
+  title: "Loading Studio...",
+};
 
+export const viewport: Viewport = {
+  ...studioViewport,
+  // Overrides the viewport to resize behavior
+  interactiveWidget: "resizes-content",
+};
+
+/**
+ * http://localhost:3000/studio
+ * login via google
+ */
 export default function StudioPage() {
-  return <Studio />;
+  return <NextStudio config={config} />;
 }
