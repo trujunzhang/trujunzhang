@@ -6,7 +6,6 @@ module.exports = {
   ],
   plugins: [
     "ycode-tailwindcss", // customize
-    "unused-imports", // https://github.com/sweepline/eslint-plugin-unused-imports
   ],
   overrides: [
     {
