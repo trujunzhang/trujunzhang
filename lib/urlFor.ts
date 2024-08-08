@@ -3,7 +3,7 @@ import imageUrlBuilder from '@sanity/image-url'
 
 const builder = imageUrlBuilder(client)
 
-const urlFor = (source: any) => {
+const urlFor = (source: any) :any=> {
     return builder.image(source)
 }
 
