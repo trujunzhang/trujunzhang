@@ -2,7 +2,6 @@ import { ImageUrlBuilder } from "sanity";
 import { client } from "@/sanity/sanity.client";
 import imageUrlBuilder from '@sanity/image-url'
 
-// @ts-ignore
 const builder:ImageUrlBuilder = imageUrlBuilder(client)
 
 const urlFor = (source: any):ImageUrlBuilder => {
