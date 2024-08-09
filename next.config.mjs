@@ -13,6 +13,7 @@ const nextConfig = {
   images: {
     domains: ["cdn.sanity.io"],
   },
+  runtime: 'edge', // for Edge API Routes only
   eslint: {
     // Warning: This allows production builds to successfully complete even if
     // your project has ESLint errors.
