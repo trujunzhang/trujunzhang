@@ -10,7 +10,7 @@ const ExperienceCard = ({ experience }: Props) => {
   const companyImage: any= experience.companyImage as any;
   return (
     <div className='flex flex-col rounded-lg items-center space-y-7 bg-[#292929] p-10 flex-shrink-0 w-[400px] md:w-[800px] snap-center md:opacity-70 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden'>
-      {/* <motion.img
+      <motion.img
         initial={{ y: -100, opacity: 0 }}
         whileInView={{ y: 0,opacity: 1 }}
         transition={{ duration: 1.2 }}
@@ -18,7 +18,7 @@ const ExperienceCard = ({ experience }: Props) => {
         className='w-20 h-20 md:w-24 md:h-24 rounded-full object-cover object-center'
         src={urlFor(companyImage).url()|| ''}
         alt="companyLogo"
-      /> */}
+      />
 
       <div className='px-8'>
         <h4 className='text-2xl font-light'>{experience.jobTitle}</h4>
