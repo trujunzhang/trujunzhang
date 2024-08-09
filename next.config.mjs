@@ -13,7 +13,6 @@ const nextConfig = {
   images: {
     domains: ["cdn.sanity.io"],
   },
-  runtime: 'experimental-edge',
   eslint: {
     // Warning: This allows production builds to successfully complete even if
     // your project has ESLint errors.
